@@ -1,0 +1,12 @@
+# MAC OSX FILES #
+.DS_Store
+
+# Packages #
+*.dmg
+*.iso
+
+# Sass Cache #
+.sass-cache
+
+# Secret Files #
+*.secret

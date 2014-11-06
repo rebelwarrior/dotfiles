@@ -1,0 +1,53 @@
+#! /usr/bin/env bash
+
+# Git tab completion from Homebrew installed Git
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+# Show Git branch in status line
+PS1='[\W$(__git_ps1 " (%s)")]\$ '
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
+
+### Amazon S3 & Google API Settings:
+source ~/.secret
+
+### OutDated:
+### Setting rbenv stuff
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
+### Sinatra (Rack) Production Environment
+# export RACK_ENV='development'
+### Required by Torquebox
+# export JBOSS_HOME=
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### Added for Homebrew (python)
+export PATH="/usr/local/bin:$PATH"
+
+### Added for JRuby
+export JRUBY_OPTS=--2.0
+export JAVA_HOME=`/usr/libexec/java_home`
+
+### Aliases
+alias be='bundle exec'
+alias sg='shotgun -p 3000'
+alias sgp='shotgun -s puma -p 3000 config.ru'
+# alias iftop='sudo /usr/local/sbin/iftop'
+alias eject_usb='diskutil unmount'
+alias tmux-named='tmux new -s'
+alias zsh='zsh --login'
+alias brew-uses='brew uses --installed'
+alias htop='sudo htop'
+
+### Dash
+function dashq(){
+  open dash://$1:$2
+}
+
+### Ansible
+export ANSIBLE_COW_SELECTION=random
+
+### Added by RVM
+source ~/.profile
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
