@@ -1,0 +1,15 @@
+Ruby (RVM)
+  pkg-config
+  libyaml
+  readline
+  libksba
+    - makedepend
+    - libgpg-error
+  openssl
+
+
+Elixir (homebrew)
+  unixodbc,
+  jpeg,
+  libpng,
+  libtiff
