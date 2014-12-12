@@ -73,6 +73,7 @@ alias eject_usb='diskutil unmount'
 alias tmux-named='tmux new -s'
 alias brew-uses='brew uses --installed'
 alias htop='sudo htop'
+alias coffee6='coffee --nodejs --harmony'
 
 ### Dash
 function dashq(){
