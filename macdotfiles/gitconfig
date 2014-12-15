@@ -13,6 +13,7 @@
 	sb = checkout
 	br = branch
 	st = status
+	#soft-reset = 
 [apply]
 	whitespace = nowarn
 [color]
