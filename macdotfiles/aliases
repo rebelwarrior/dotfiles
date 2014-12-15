@@ -1,0 +1,17 @@
+
+
+### Aliases
+alias be='bundle exec'
+alias sg='shotgun -p 3000'
+alias sgp='shotgun -s puma -p 3000 config.ru'
+# alias iftop='sudo /usr/local/sbin/iftop'
+alias eject_usb='diskutil unmount'
+alias tmux-named='tmux new -s'
+alias brew-uses='brew uses --installed'
+alias htop='sudo htop'
+alias coffee6='coffee --nodejs --harmony'
+
+#Aliases For Mac Applications
+alias psql='/Applications/Postgres.app/Contents/Versions/9.3/bin/psql -p5432
+psql'
+alias julia='/Applications/Julia-0.3.3.app/Contents/Resources/julia/bin/julia'
