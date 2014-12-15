@@ -29,6 +29,7 @@ export JRUBY_OPTS=--2.0
 export JAVA_HOME=`/usr/libexec/java_home`
 
 ### Aliases
+# source ~/.aliases
 alias be='bundle exec'
 alias sg='shotgun -p 3000'
 alias sgp='shotgun -s puma -p 3000 config.ru'
