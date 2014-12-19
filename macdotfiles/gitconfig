@@ -13,7 +13,11 @@
 	sb = checkout
 	br = branch
 	st = status
-	#soft-reset = 
+	remotes = remote -v
+	diff-staged = diff --staged
+	amend = commit --amend -m
+	soft-reset = reset --soft HEAD^
+	hard-reset = reset --hard HEAD^
 [apply]
 	whitespace = nowarn
 [color]
