@@ -84,3 +84,11 @@ function dashq(){
 ### Added for RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+### Hide Icons
+function hideIcons(){
+  defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+}
+function showIcons(){
+  defaults write com.apple.finder CreateDesktop -bool true && killall Finder
+}
