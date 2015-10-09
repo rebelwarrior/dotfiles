@@ -76,6 +76,14 @@ alias brew-uses='brew uses --installed'
 alias htop='sudo htop'
 alias coffee6='coffee --nodejs --harmony'
 
+### Brew Dependencies script
+function brew-dependencies(){
+   brew list | while read cask; do
+     echo -n $fg[red] $cask $fg[white];
+     brew deps $cask | awk '{printf(" %s ", $0)}'; echo "";
+   done
+ }
+ 
 ### Dash
 function dashq(){
   open dash://$1:$2
