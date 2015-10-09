@@ -7,9 +7,3 @@ Ruby (RVM)
     - libgpg-error
   openssl
 
-
-Elixir (homebrew)
-  unixodbc,
-  jpeg,
-  libpng,
-  libtiff
