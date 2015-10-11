@@ -1,20 +1,39 @@
-### Aliases
+### Aliases:
 
-
+## Brew Related
 alias sha1='openssl sha1'
+alias zsh='zsh --login'
 alias z='zsh --login'
 alias htop='sudo htop'
-alias sg='shotgun -p 3000'
-alias sgp='shotgun -s puma -p 3000 config.ru'
-alias eject_usb='diskutil unmount'
 alias tmux-named='tmux new -s'
 alias brew-uses='brew uses --installed'
 alias coffee6='coffee --nodejs --harmony'
+
+## Ruby Related
 alias be='bundle exec'
+alias sg='shotgun -p 3000'
+alias sgp='shotgun -s puma -p 3000 config.ru'
 
+## Mac Only
+alias eject_usb='diskutil unmount'
 
-### Aliases For Mac Applications
-
+## For Mac Applications
 alias psql='/Applications/Postgres.app/Contents/Versions/9.4/bin/psql -p5432
 psql'
 alias julia='exec "/Applications/Julia-0.4.0.app/Contents/Resources/julia/bin/julia"'
+
+### Functions:
+
+## Brew Dependencies script
+function brew-dependencies(){
+   brew list | while read cask; do
+     echo -n $fg[red] $cask $fg[white];
+     brew deps $cask | awk '{printf(" %s ", $0)}'; echo "";
+   done
+ }
+
+## Dash
+function dashq(){
+  open dash://$1:$2
+}
+
