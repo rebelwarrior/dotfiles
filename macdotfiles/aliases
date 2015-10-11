@@ -37,3 +37,10 @@ function dashq(){
   open dash://$1:$2
 }
 
+## Hide Icons
+function hideIcons(){
+  defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+}
+function showIcons(){
+  defaults write com.apple.finder CreateDesktop -bool true && killall Finder
+}
