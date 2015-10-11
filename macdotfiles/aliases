@@ -13,6 +13,7 @@ alias coffee6='coffee --nodejs --harmony'
 alias be='bundle exec'
 alias sg='shotgun -p 3000'
 alias sgp='shotgun -s puma -p 3000 config.ru'
+alias mrails='mjruby -S rails'
 
 ## Mac Only
 alias eject_usb='diskutil unmount'
