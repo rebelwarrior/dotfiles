@@ -1,7 +1,6 @@
 #! /bin/sh
 
 ### Aliases:
-
 ## Brew Related
 alias sha1='openssl sha1'
 alias zsh='zsh --login'
@@ -25,6 +24,10 @@ alias psql="'/Applications/Postgres.app/Contents/Versions/9.4/bin'/psql -p5432"
 alias julia='exec "/Applications/Julia-0.4.0.app/Contents/Resources/julia/bin/julia"'
 
 ### Functions:
+## PostgresQL
+function pg(){
+  '/Applications/Postgres.app/Contents/Versions/9.4/bin'/$1
+}
 
 ## Brew Dependencies script
 function brew-dependencies(){
