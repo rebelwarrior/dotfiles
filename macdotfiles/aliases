@@ -26,7 +26,7 @@ alias julia='exec "/Applications/Julia-0.4.0.app/Contents/Resources/julia/bin/ju
 ### Functions:
 ## PostgresQL
 function pg(){
-  '/Applications/Postgres.app/Contents/Versions/9.4/bin'/$1
+  '/Applications/Postgres.app/Contents/Versions/9.4/bin'/$*
 }
 
 ## Brew Dependencies script
