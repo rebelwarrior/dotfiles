@@ -21,7 +21,7 @@ alias eject_usb='diskutil unmount'
 
 ## For Mac Applications
 alias psql="'/Applications/Postgres.app/Contents/Versions/9.4/bin'/psql -p5432"
-alias julia='exec "/Applications/Julia-0.4.0.app/Contents/Resources/julia/bin/julia"'
+# alias julia='exec "/Applications/Julia-0.4.0.app/Contents/Resources/julia/bin/julia"'
 
 ### Functions:
 ## PostgresQL
@@ -48,4 +48,9 @@ function hideIcons(){
 }
 function showIcons(){
   defaults write com.apple.finder CreateDesktop -bool true && killall Finder
+}
+
+## Julia
+function julia(){
+  "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
 }
