@@ -50,6 +50,11 @@ function showIcons(){
   defaults write com.apple.finder CreateDesktop -bool true && killall Finder
 }
 
+## Reset RVM is not a function
+function rvm-reset(){
+  source ~/.rvm/scripts/rvm; type rvm | head -n 1
+}
+
 ## Julia
 #function julia(){
 #  "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
