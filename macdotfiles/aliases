@@ -50,6 +50,11 @@ function showIcons(){
   defaults write com.apple.finder CreateDesktop -bool true && killall Finder
 }
 
+## Nescesary Mac Defaults
+#function stopChromeSwipe(){
+#  defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
+#}
+
 ## Reset RVM is not a function
 function rvm-reset(){
   source ~/.rvm/scripts/rvm; type rvm | head -n 1
