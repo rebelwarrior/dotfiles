@@ -1,4 +1,4 @@
-# storing pasword credentials in osx keychain w/:
+# storing password credentials in osx keychain w/:
 # git config --global credential.helper osxkeychain
 
 
