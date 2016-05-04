@@ -1,0 +1,10 @@
+#! /bin/sh
+
+### Aliases:
+alias ppsql='sudo -u postgres psql'
+alias z='zsh --login'
+alias htop='sudo htop'
+alias coffee6='coffee --nodejs --harmony'
+
+## Ruby Related
+alias be='bundle exec'
