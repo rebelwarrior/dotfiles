@@ -18,6 +18,7 @@ alias mrails='mjruby -S rails'
 
 ## Mac Only
 alias eject_usb='diskutil unmount'
+alias java_home='/usr/libexec/java_home'
 
 ## For Mac Applications
 alias psql="'/Applications/Postgres.app/Contents/Versions/9.4/bin'/psql -p5432"
