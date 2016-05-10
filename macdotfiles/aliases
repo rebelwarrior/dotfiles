@@ -28,7 +28,7 @@ alias eject_usb='diskutil unmount'
 alias java_home='/usr/libexec/java_home'
 
 ## JOSM
-if [ -f ~/Applications/JOSM.app ]; then
+if [ -e ~/Applications/JOSM.app ]; then
   alias josm='java -jar ~/Applications/JOSM.app/Contents/Java/*.jar'
 fi
 
