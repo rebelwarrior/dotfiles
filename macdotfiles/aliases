@@ -15,19 +15,34 @@ alias be='bundle exec'
 alias sg='shotgun -p 3000'
 alias sgp='shotgun -s puma -p 3000 config.ru'
 alias mrails='mjruby -S rails'
+alias rspec_init='bin/rails generate rspec:install'
+
+# alias rvm='rbenv' #if using rbenv instead of rvm
+
+## Python Related
+alias django-admin='django-admin.py'
+alias django-manage='python3 manage.py'
 
 ## Mac Only
 alias eject_usb='diskutil unmount'
 alias java_home='/usr/libexec/java_home'
 
+## JOSM
+if [ -f ~/Applications/JOSM.app ]; then
+  alias josm='java -jar ~/Applications/JOSM.app/Contents/Java/*.jar'
+fi
+
 ## For Mac Applications
-alias psql="'/Applications/Postgres.app/Contents/Versions/9.4/bin'/psql -p5432"
-alias julia= "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias psql="'/Applications/Postgres.app/Contents/Versions/latest/bin'/psql -p5432"
+# alias julia= "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
+# export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 ### Functions:
 ## PostgresQL
 function pg(){
-  '/Applications/Postgres.app/Contents/Versions/9.4/bin'/$*
+  export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin;
+  '/Applications/Postgres.app/Contents/Versions/latest/bin'/$*
 }
 
 ## Brew Dependencies script
@@ -52,16 +67,15 @@ function showIcons(){
 }
 
 ## Nescesary Mac Defaults
-#function stopChromeSwipe(){
-#  defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
-#}
-
-## Reset RVM is not a function
-function rvm-reset(){
-  source ~/.rvm/scripts/rvm; type rvm | head -n 1
+function stopChromeSwipe(){
+  defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
 }
 
-## Julia
-#function julia(){
-#  "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
-#}
+## Reset RVM is not a function
+# function rvm-reset(){
+#   source ~/.rvm/scripts/rvm; type rvm | head -n 1
+# }
+
+## Java Home for Java Cryptographic Extensions
+# /usr/libexec/java_home
+# jre/lib/security
