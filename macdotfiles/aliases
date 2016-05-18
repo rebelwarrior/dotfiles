@@ -35,7 +35,6 @@ fi
 ## For Mac Applications
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias psql="'/Applications/Postgres.app/Contents/Versions/latest/bin'/psql -p5432"
-# alias julia= "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
 # export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 ### Functions:
@@ -69,6 +68,11 @@ function showIcons(){
 ## Nescesary Mac Defaults
 function stopChromeSwipe(){
   defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
+}
+
+## For Julia
+function julia() {
+  "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
 }
 
 ## Reset RVM is not a function

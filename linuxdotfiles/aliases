@@ -1,10 +1,27 @@
 #! /bin/sh
 
 ### Aliases:
+alias find-process="ps aux | grep"
 alias ppsql='sudo -u postgres psql'
+alias pg='sudo -u postgres'
 alias z='zsh --login'
 alias htop='sudo htop'
 alias coffee6='coffee --nodejs --harmony'
 
+
 ## Ruby Related
 alias be='bundle exec'
+
+## Linux 
+alias ubuntu-ver="lsb_release -a"
+alias linux-distro="python -c 'import platform; print platform.dist()'"
+alias ufw-logs="grep UFW /var/log/syslog"
+
+
+#alias for list of users
+#alias for ip addrs of localhost
+
+
+# Adding Psswd to PostgresQL users
+# $ sudo -u postgres psql postgres
+# postgres=# \password postgres
