@@ -1,21 +1,22 @@
 #! /bin/sh
 
 ### Aliases:
-## Brew Related
+## HomeBrew Related
 alias sha1='openssl sha1'
 alias zsh='zsh --login'
 alias z='zsh --login'
 alias htop='sudo htop'
 alias tmux-named='tmux new -s'
-alias brew-uses='brew uses --installed'
 alias coffee6='coffee --nodejs --harmony'
+alias brew-uses='brew uses --installed'
+alias brew-requires='brew uses --installed'
 
 ## Ruby Related
 alias be='bundle exec'
 alias sg='shotgun -p 3000'
 alias sgp='shotgun -s puma -p 3000 config.ru'
 alias mrails='mjruby -S rails'
-alias rspec_init='bin/rails generate rspec:install'
+alias rspec-init='bin/rails generate rspec:install'
 
 # alias rvm='rbenv' #if using rbenv instead of rvm
 
@@ -24,8 +25,10 @@ alias django-admin='django-admin.py'
 alias django-manage='python3 manage.py'
 
 ## Mac Only
-alias eject_usb='diskutil unmount'
+# alias eject_usb='diskutil unmount'
+alias eject-usb='diskutil unmount'
 alias java_home='/usr/libexec/java_home'
+alias ip-address='ifconfig | grep inet'
 
 ## JOSM
 if [ -e ~/Applications/JOSM.app ]; then
@@ -44,7 +47,7 @@ function pg(){
   '/Applications/Postgres.app/Contents/Versions/latest/bin'/$*
 }
 
-## Brew Dependencies script
+## HomeBrew Dependencies script
 function brew-dependencies(){
    brew list | while read cask; do
      echo -n $fg[red] $cask $fg[white];

@@ -2,26 +2,39 @@
 
 ### Aliases:
 alias find-process="ps aux | grep"
-alias ppsql='sudo -u postgres psql'
-alias pg='sudo -u postgres'
 alias z='zsh --login'
 alias htop='sudo htop'
+alias tmux-named='tmux new -s'
 alias coffee6='coffee --nodejs --harmony'
 
 
 ## Ruby Related
 alias be='bundle exec'
 
-## Linux 
+## Linux Only
 alias ubuntu-ver="lsb_release -a"
 alias linux-distro="python -c 'import platform; print platform.dist()'"
 alias ufw-logs="grep UFW /var/log/syslog"
-
+alias ip-address="hostname --all-ip-addresses"
+alias ip-address-full="ip addr show"
+alias list-ports="sudo netstat -lptu"
 
 #alias for list of users
-#alias for ip addrs of localhost
 
 
 # Adding Psswd to PostgresQL users
 # $ sudo -u postgres psql postgres
 # postgres=# \password postgres
+
+
+## PostgrewQL Related
+alias ppsql='sudo -u postgres psql'
+alias pgu='sudo -u postgres'
+alias pg_security_file='psql -c "SHOW hba_file;"'
+
+## Python Related
+alias django-admin='django-admin.py'
+alias django-manage='python3 manage.py'
+
+
+### Functions:
