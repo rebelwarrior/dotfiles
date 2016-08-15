@@ -1,13 +1,26 @@
 #! /bin/sh
 
 ### Aliases:
-## HomeBrew Related
-alias sha1='openssl sha1'
+alias las='ls -lAhgo'
 alias zsh='zsh --login'
 alias z='zsh --login'
+alias cdd='pushd'
+alias cdb='popd'
+
+## HomeBrew Related
+alias sha1='openssl sha1'
 alias htop='sudo htop'
 alias tmux-named='tmux new -s'
+
 alias coffee6='coffee --nodejs --harmony'
+alias test-coffee='jasmine-node --coffee'
+alias coffee-test='jasmine-node --coffee'
+
+alias els='elasticsearch'
+alias els_nodes="curl 'localhost:9200/_cat/nodes?v' "
+alias els_health="curl 'localhost:9200/_cat/health?v' "
+alias els_indices="curl 'localhost:9200/_cat/indices?v' "
+
 alias brew-uses='brew uses --installed'
 alias brew-requires='brew uses --installed'
 
@@ -30,6 +43,8 @@ alias eject-usb='diskutil unmount'
 alias java_home='/usr/libexec/java_home'
 alias ip-address='ifconfig | grep inet'
 
+## Applications:
+
 ## JOSM
 if [ -e ~/Applications/JOSM.app ]; then
   alias josm='java -jar ~/Applications/JOSM.app/Contents/Java/*.jar'
@@ -37,8 +52,11 @@ fi
 
 ## For Mac Applications
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+# alias safari='open -a Safari'
+
+## For PostgresQL App
 alias psql="'/Applications/Postgres.app/Contents/Versions/latest/bin'/psql -p5432"
-# export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin # needed for building gems
 
 ### Functions:
 ## PostgresQL
@@ -60,6 +78,18 @@ function dashq(){
   open dash://$1:$2
 }
 
+## ElasticSearch
+function els_create_index(){
+  curl -XPUT "localhost:9200/$1?pretty"
+}
+
+### Mac Only
+
+## Trash files
+function trash(){
+  mv -f $1 ~/.Trash/
+}
+
 ## Hide Icons
 function hideIcons(){
   defaults write com.apple.finder CreateDesktop -bool false && killall Finder
@@ -73,16 +103,31 @@ function stopChromeSwipe(){
   defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
 }
 
-## For Julia
-function julia() {
-  "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
-}
-
 ## Reset RVM is not a function
-# function rvm-reset(){
-#   source ~/.rvm/scripts/rvm; type rvm | head -n 1
-# }
+if [ -e ~/.rvm/scripts/rvm ]; then
+  function rvm-reset(){
+    source ~/.rvm/scripts/rvm; type rvm | head -n 1
+  }
+fi
+
 
 ## Java Home for Java Cryptographic Extensions
 # /usr/libexec/java_home
 # jre/lib/security
+
+## Experimental
+if (ls /Applications | grep 'Julia'); then
+  function julia(){
+    "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
+  }
+fi
+
+function elm-heroku(){
+  # maybe add an h2o server start on this. 
+  elm-make $1 --output index.html && mv index.html index.php
+}
+
+function port-uses() {
+  # mac only
+  sudo lsof -n -i4TCP:$1 | grep LISTEN
+}
