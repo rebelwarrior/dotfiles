@@ -1,9 +1,12 @@
-# storing password credentials in osx keychain w/:
-# git config --global credential.helper osxkeychain
+## storing pasword credentials in osx keychain w/:
+#$ git config --global credential.helper osxkeychain
+## using a repository level gitconfig
+#$ git config --local include.path ../.gitconfig
+
 
 
 [user]
-	name = {{username}}
+	name = {{user_name}}
 	email = {{email}}
 [alias]
 	branch-out = checkout -b
@@ -16,8 +19,9 @@
 	remotes = remote -v
 	diff-staged = diff --staged
 	amend = commit --amend -m
+	# Throws files back to uncommit status one commit back.
 	soft-reset = reset --soft HEAD^
-	hard-reset = reset --hard HEAD^
+	# hard-reset = reset --hard HEAD^
 [apply]
 	whitespace = nowarn
 [color]
@@ -27,3 +31,10 @@
 	editor = mate -w
 [credential]
 	helper = osxkeychain
+
+## Sample User Config in Repo
+# [user]
+#   name = {{user_name}}
+#   email = {{email}}
+# [core]
+#   sshCommand "ssh -i ~/.ssh/id_rsa_gov -F /dev/null"
