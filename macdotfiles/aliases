@@ -7,65 +7,83 @@ alias z='zsh --login'
 alias cdd='pushd'
 alias cdb='popd'
 
-## HomeBrew Related
+## Mac Only ##
+alias eject_usb='diskutil unmount'
+alias java_home='/usr/libexec/java_home'
+alias macjs='/System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc'
+alias delete='trash' #see function below
+
+## Brew Related
 alias sha1='openssl sha1'
 alias htop='sudo htop'
 alias tmux-named='tmux new -s'
 
+alias brew-uses='brew uses --installed'
+alias brew-requires='brew uses --installed'
+
+alias brewbrew="brew update && brew upgrade && brew cleanup"
+
+## CoffeeScript
 alias coffee6='coffee --nodejs --harmony'
 alias test-coffee='jasmine-node --coffee'
 alias coffee-test='jasmine-node --coffee'
 
-alias els='elasticsearch'
-alias els_nodes="curl 'localhost:9200/_cat/nodes?v' "
-alias els_health="curl 'localhost:9200/_cat/health?v' "
-alias els_indices="curl 'localhost:9200/_cat/indices?v' "
-
-alias brew-uses='brew uses --installed'
-alias brew-requires='brew uses --installed'
 
 ## Ruby Related
 alias be='bundle exec'
 alias sg='shotgun -p 3000'
 alias sgp='shotgun -s puma -p 3000 config.ru'
 alias mrails='mjruby -S rails'
-alias rspec-init='bin/rails generate rspec:install'
-
-# alias rvm='rbenv' #if using rbenv instead of rvm
+alias rspec_init='bin/rails generate rspec:install'
+# if using rbenv instead of rvm I like below alias
+alias rvm='rbenv'
 
 ## Python Related
 alias django-admin='django-admin.py'
 alias django-manage='python3 manage.py'
 
-## Mac Only
-# alias eject_usb='diskutil unmount'
-alias eject-usb='diskutil unmount'
-alias java_home='/usr/libexec/java_home'
-alias ip-address='ifconfig | grep inet'
+## ElasticSearch
+# alias els='elasticsearch'
+# alias els_nodes="curl 'localhost:9200/_cat/nodes?v' "
+# alias els_health="curl 'localhost:9200/_cat/health?v' "
+# alias els_indices="curl 'localhost:9200/_cat/indices?v' "
 
-## Applications:
+## Docker Related
+# alias docker-remove-image='docker rmi'
+# drun() { # start container with the specified entrypoint and colour terminal
+#     if [[ $# -lt 2 ]]; then
+#         echo "drun needs 2+ arguments: image entrypoint" >&2
+#         return
+#     fi
+#     docker run -ti -e "TERM=xterm-256color" "$@"
+# }
+
+
+
+### Applications:
+
+## For PostgresQL App
+alias psql="'/Applications/Postgres.app/Contents/Versions/latest/bin'/psql -p5432"
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin # needed for building gems
 
 ## JOSM
 if [ -e ~/Applications/JOSM.app ]; then
   alias josm='java -jar ~/Applications/JOSM.app/Contents/Java/*.jar'
 fi
 
-## For Mac Applications
+## For other Mac Applications
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 # alias safari='open -a Safari'
 
-## For PostgresQL App
-alias psql="'/Applications/Postgres.app/Contents/Versions/latest/bin'/psql -p5432"
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin # needed for building gems
 
 ### Functions:
 ## PostgresQL
 function pg(){
-  export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin;
+  # export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin;
   '/Applications/Postgres.app/Contents/Versions/latest/bin'/$*
 }
 
-## HomeBrew Dependencies script
+## Brew Dependencies script
 function brew-dependencies(){
    brew list | while read cask; do
      echo -n $fg[red] $cask $fg[white];
@@ -79,11 +97,11 @@ function dashq(){
 }
 
 ## ElasticSearch
-function els_create_index(){
-  curl -XPUT "localhost:9200/$1?pretty"
-}
+# function els_create_index(){
+#   curl -XPUT "localhost:9200/$1?pretty"
+# }
 
-### Mac Only
+### Mac Only ###
 
 ## Trash files
 function trash(){
@@ -110,13 +128,14 @@ if [ -e ~/.rvm/scripts/rvm ]; then
   }
 fi
 
-
 ## Java Home for Java Cryptographic Extensions
 # /usr/libexec/java_home
 # jre/lib/security
 
-## Experimental
+
+### Experimental
 if (ls /Applications | grep 'Julia'); then
+  # mac only (location)
   function julia(){
     "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
   }
@@ -130,4 +149,9 @@ function elm-heroku(){
 function port-uses() {
   # mac only
   sudo lsof -n -i4TCP:$1 | grep LISTEN
+}
+
+function invert-colors() {
+  # mac only
+  echo "Go to 'System Preferences>Keyboard>Keyboard shortcuts>Accessibility' and turn on the keyboard shortcut."
 }
