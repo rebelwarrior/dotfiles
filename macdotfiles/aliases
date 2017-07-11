@@ -134,7 +134,8 @@ fi
 
 
 ### Experimental
-if (ls /Applications | grep 'Julia'); then
+function tf(){ if $1; then; true; else; false; fi }
+if (ls /Applications | grep 'Julia'| tf ); then
   # mac only (location)
   function julia(){
     "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
