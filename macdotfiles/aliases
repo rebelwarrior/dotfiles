@@ -134,11 +134,9 @@ fi
 
 
 ### Experimental
-if (ls /Applications | grep 'Julia'); then
+if (ls /Applications | grep -q 'Julia'); then
   # mac only (location)
-  function julia(){
-    "/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
-  }
+  alias julia="/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
 fi
 
 function elm-heroku(){
