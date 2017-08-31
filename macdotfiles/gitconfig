@@ -22,6 +22,7 @@
 	# Throws files back to uncommit status one commit back.
 	soft-reset = reset --soft HEAD^
 	# hard-reset = reset --hard HEAD^
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --branches --remotes --tags
 [apply]
 	whitespace = nowarn
 [color]
