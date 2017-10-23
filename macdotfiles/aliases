@@ -12,16 +12,21 @@ alias eject_usb='diskutil unmount'
 alias java_home='/usr/libexec/java_home'
 alias macjs='/System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc'
 alias delete='trash' #see function below
+alias hide-icons='hideIcons'
+alias show-icons='showIcons'
+alias visualvm='jvisualvm'
 
 ## Brew Related
 alias sha1='openssl sha1'
-alias htop='sudo htop'
 alias tmux-named='tmux new -s'
 
 alias brew-uses='brew uses --installed'
 alias brew-requires='brew uses --installed'
-
+alias brew-deps='brew-dependencies' #Function Below
 alias brewbrew="brew update && brew upgrade && brew cleanup"
+
+## Go Lang
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 ## CoffeeScript
 alias coffee6='coffee --nodejs --harmony'
@@ -34,13 +39,14 @@ alias be='bundle exec'
 alias sg='shotgun -p 3000'
 alias sgp='shotgun -s puma -p 3000 config.ru'
 alias mrails='mjruby -S rails'
-alias rspec_init='bin/rails generate rspec:install'
+alias rspec-init='bin/rails generate rspec:install'
 # if using rbenv instead of rvm I like below alias
 alias rvm='rbenv'
 
 ## Python Related
 alias django-admin='django-admin.py'
 alias django-manage='python3 manage.py'
+alias pye='pyenv'
 
 ## ElasticSearch
 # alias els='elasticsearch'
@@ -101,6 +107,17 @@ function dashq(){
 #   curl -XPUT "localhost:9200/$1?pretty"
 # }
 
+## Atom Packages
+function setup_atom(){
+  # apm install language-mjml;
+  apm install language-elm;
+  apm install language-elixir;
+  apm install elm-format;
+  apm install file-icons;
+  apm install mini-map;
+  apm install minimap-highlight-selected;
+}
+
 ### Mac Only ###
 
 ## Trash files
@@ -140,7 +157,7 @@ if (ls /Applications | grep -q 'Julia'); then
 fi
 
 function elm-heroku(){
-  # maybe add an h2o server start on this. 
+  # maybe add an h2o server start on this.
   elm-make $1 --output index.html && mv index.html index.php
 }
 
