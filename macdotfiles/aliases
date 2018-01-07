@@ -139,6 +139,13 @@ if (ls /Applications | grep -q 'Julia'); then
   alias julia="/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
 fi
 
+if (command -v pygmentize >/dev/null 2>&1 || exit 1 ); then 
+  ## command -v <command>, type and hash are cheaper and quiter than `which'
+  ## command -v foo >/dev/null 2>&1 || { echo >&2 "aborting"; exit 1; }
+  ## type foo >/dev/null 2>&1 || exit 1 ## hash foo 2>/dev/null || exit 1
+  alias pcat='pygmentize -f terminal256 -O style=monokai -g'
+fi
+
 function elm-heroku(){
   # maybe add an h2o server start on this. 
   elm-make $1 --output index.html && mv index.html index.php
