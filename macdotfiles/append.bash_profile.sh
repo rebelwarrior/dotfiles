@@ -17,6 +17,7 @@ source ~/.aliases
 if (type rbenv >/dev/null 2>&1 || exit 1 ); then eval "$(rbenv init -)"; fi
 
 ### PyEnv
+# If getting a missing zlib run `xcode-select --install`
 # if (type pyenv >/dev/null 2>&1 || exit 1 ); then eval "$(pyenv init -)"; fi
 # if (type pyenv-virtualenv-init >/dev/null 2>&1 || exit 1 ); then
 #   eval "$(pyenv virtualenv-init -)"
