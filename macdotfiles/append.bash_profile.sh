@@ -1,4 +1,3 @@
-#! /usr/bin/env bash
 
 # Git tab completion from Homebrew installed Git
 source /usr/local/etc/bash_completion.d/git-prompt.sh

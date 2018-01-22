@@ -1,9 +1,5 @@
 
-# MAC OSX FILES #
-.DS_Store
-
 # Packages #
-*.dmg
 *.iso
 
 # Sass Cache #
