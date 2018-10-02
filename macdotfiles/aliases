@@ -153,7 +153,12 @@ fi
 ### Experimental
 if (ls /Applications | grep -q 'Julia'); then
   # mac only (location)
-  alias julia="/Applications/${$(ls /Applications | grep 'Julia')}/Contents/Resources/julia/bin/julia"
+  alias julia="/Applications/${$(ls /Applications | grep 'Julia'| head -1)}/Contents/Resources/julia/bin/julia"
+fi
+
+if (ls /Applications | grep -q 'Firefox'); then
+  # mac only (location)
+    alias firefox="/Applications/\"${$(ls /Applications | grep 'Firefox' | head -1)}\"/Contents/MacOS/firefox";
 fi
 
 if (command -v pygmentize >/dev/null 2>&1 || exit 1 ); then 
