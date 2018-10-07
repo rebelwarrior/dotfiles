@@ -207,7 +207,11 @@ fi
 function minify(){
   # yuicompressor --disable-optimizations $1 -o $2
   # uglify-js is a npm package that should be installed globally `npm install uglify-js --global`
-  uglifyjs $1 --compress 'pure_funcs="F2,F3,F4,F5,F6,F7,F8,F9,A2,A3,A4,A5,A6,A7,A8,A9",pure_getters,keep_fargs=false,unsafe_comps,unsafe' | uglifyjs --mangle --output $2
+  if (command -v uglifyjs >/dev/null 2>&1 || exit 1 ); then
+    uglifyjs $1 --compress 'pure_funcs="F2,F3,F4,F5,F6,F7,F8,F9,A2,A3,A4,A5,A6,A7,A8,A9",pure_getters,keep_fargs=false,unsafe_comps,unsafe' | uglifyjs --mangle --output $2
+  else 
+    echo "uglify-js is a npm package that should be installed globally 'npm install uglify-js --global'"
+  fi
 }
 
 # if (type closure-compiler >/dev/null 2>&1 || exit 1); then
