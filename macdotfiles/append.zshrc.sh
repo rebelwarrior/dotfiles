@@ -3,9 +3,8 @@
 source ~/.aliases
 
 ### API Settings for Amazon S3 & Google API
-if [ -e $HOME/.secret ]; then
-  source $HOME/.secret
-fi
+source $HOME/.secret
+
 
 ### zsh-syntax-highlighting
 if [ -e $HOME/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then 
