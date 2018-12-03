@@ -29,11 +29,6 @@ alias brew-deps='brew-dependencies' #Function Below
 alias brewbrew="brew update && brew upgrade && brew cleanup"
 alias bs="brew services"
 
-## GO Lang
-if [ -e /usr/local/opt/go ]; then
-  export PATH=$PATH:/usr/local/opt/go/libexec/bin
-fi
-
 ## CoffeeScript
 alias coffee6='coffee --nodejs --harmony'
 alias test-coffee='jasmine-node --coffee'
@@ -42,13 +37,18 @@ alias coffee-test='jasmine-node --coffee'
 
 ## Ruby Related
 alias be='bundle exec'
+# For Sinatra
 alias sg='shotgun -p 3000'
 alias sgp='shotgun -s puma -p 3000 config.ru'
-alias mrails='mjruby -S rails'
+# For Rails
 alias rspec-init='bin/rails generate rspec:install'
+# For RBENV 
 alias rbe='rbenv'
 # When using rbenv instead of rvm I like below alias
 alias rvm='rbenv'
+# For Jekyll
+alias jks='bundle exec jekyll s'
+alias jkb='bundle exec jekyll build'
 
 
 ## Python Related
@@ -73,7 +73,17 @@ alias p3='python3'
 #     docker run -ti -e "TERM=xterm-256color" "$@"
 # }
 
+### Paths: ###
 
+## Rust Related
+if [ -e $HOME/.cargo ]; then
+  source $HOME/.cargo/env
+fi 
+
+## GO Lang
+# if [ -e /usr/local/opt/go ]; then
+#   export PATH=$PATH:/usr/local/opt/go/libexec/bin
+# fi
 
 ### Applications: ###
 
@@ -90,7 +100,7 @@ fi
 
 ## For other Mac Applications
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias safari-open='open -a Safari'
+alias safari='open -a Safari'
 alias opera='/Applications/Opera.app/Contents/MacOS/Opera'
 
 
@@ -194,8 +204,8 @@ fi
 #   ## pip3 install Pygments
 #   ## Make alias anyway as pyenv has trouble w/ pip
 # fi
-alias pcat='pygmentize -f terminal256 -O style=monokai -g'
 
+alias pcat='pygmentize -f terminal256 -O style=monokai -g'
 
 if (ls $HOME/.jars/ | grep -q 'plantuml'); then
   function plantuml(){
