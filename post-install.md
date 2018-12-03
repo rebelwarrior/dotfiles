@@ -68,3 +68,7 @@
 1. [Postico](https://eggerapps.at/postico/)
 2. Paw API vs. Postman
 3. Discord
+
+## Drivers
+1. Marble Mouse Logictech Driver
+2. xbox360 Controller Driver 
