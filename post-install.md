@@ -2,7 +2,7 @@
 
 ## Command Line Install
 
-1. [Homebrew](homebrew.sh)
+1. [Homebrew](https://brew.sh)
  
 ## Mac Applications 
 
@@ -13,10 +13,10 @@
 5. Text Editor: [TextMate](https://macromates.com/download)
 6. Text Editor: [Visual Studio Code](https://code.visualstudio.com/Download)
 7. Text Editor: [Atom](https://atom.io)
-7. Web Browser: [Google Chrome]() (if Desktop)
+7. Web Browser: Google Chrome (if Desktop)
 8. Web Browser: [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
 9. Web Browser: [Opera](https://www.opera.com) (if Laptop)
-10. [Dropbox]()
+10. [Dropbox](https://www.dropbox.com/install)
 11. Programming Resource: [Postgres App](https://postgresapp.com/downloads.html)
 12. Programming Resource: [DBeaver](https://dbeaver.io/download/)
 13. VPN Software
@@ -25,7 +25,7 @@
 16. [LibreOffice](https://www.libreoffice.org) (if desktop)
 17. [CrossOver](https://www.codeweavers.com)
 18. Readdle's [PDF Expert](https://pdfexpert.com)
-19. Amazon Apps: [Amazon Music](), [Kindle App](), [Send to Kindle]()
+19. Amazon Apps: Amazon Music, Kindle App, Send to Kindle
 20. [Slack](https://slack.com/downloads/osx)
 21. [Steam App](https://store.steampowered.com/about/)
 
