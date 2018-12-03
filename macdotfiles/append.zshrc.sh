@@ -3,10 +3,14 @@
 source ~/.aliases
 
 ### API Settings for Amazon S3 & Google API
-source ~/.secret
+if [ -e $HOME/.secret ]; then
+  source $HOME/.secret
+fi
 
 ### zsh-syntax-highlighting
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ -e $HOME/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then 
+  source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi 
 
 ### rbenv (RUBY)
 if (type rbenv >/dev/null 2>&1 || exit 1 ); then eval "$(rbenv init -)"; fi
