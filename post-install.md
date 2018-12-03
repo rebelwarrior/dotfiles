@@ -71,4 +71,4 @@
 
 ## Drivers
 1. Marble Mouse Logictech Driver
-2. xbox360 Controller Driver 
+2. [xbox360 Controller Driver](https://github.com/360Controller/360Controller/releases)
