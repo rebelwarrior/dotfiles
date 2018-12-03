@@ -3,7 +3,7 @@
 source ~/.aliases
 
 ### API Settings for Amazon S3 & Google API
-source $HOME/.secret
+source ~/.secret
 
 
 ### zsh-syntax-highlighting
