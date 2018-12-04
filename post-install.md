@@ -3,6 +3,9 @@
 ## Command Line Install
 
 1. [Homebrew](https://brew.sh)
+2. Git `brew install git`
+3. [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
+4. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
  
 ## Mac Applications 
 
