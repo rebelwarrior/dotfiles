@@ -58,7 +58,6 @@
 3. [Descript](https://www.descript.com)
 4. [Aeon Timeline 2](https://www.aeontimeline.com)
 5. [Xee3](https://theunarchiver.com/xee)
-6. [Phiewer](https://phiewer.com)
 
 ## Video Conference
 
@@ -70,7 +69,8 @@
 ## Considering 
 1. [Postico](https://eggerapps.at/postico/)
 2. Paw API vs. Postman
-3. Discord
+3. [Discord](https://discordapp.com/download)
+4. [Phiewer](https://phiewer.com)
 
 ## Drivers
 1. Marble Mouse Logictech Driver
