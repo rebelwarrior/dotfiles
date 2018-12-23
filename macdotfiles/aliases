@@ -73,6 +73,9 @@ alias p3='python3'
 #     docker run -ti -e "TERM=xterm-256color" "$@"
 # }
 
+## Rust Related 
+alias build-wasm='cargo build --target wasm32-unknown-unknown'
+
 ### Paths: ###
 
 ## Rust Related
