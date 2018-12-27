@@ -15,7 +15,7 @@
 4. Programming Resource: [Dash](https://kapeli.com/dash)
 5. Text Editor: [TextMate](https://macromates.com/download)
 6. Text Editor: [Visual Studio Code](https://code.visualstudio.com/Download)
-  - Use Cmnd+P to open [shell pallet](https://code.visualstudio.com/docs/setup/mac) and then type `shell command`
+  - Use Cmnd+Shft+P to open [shell pallet](https://code.visualstudio.com/docs/setup/mac) and then type `shell command`
 7. Text Editor: [Atom](https://atom.io)
 7. Web Browser: Google Chrome (if Desktop)
 8. Web Browser: [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
