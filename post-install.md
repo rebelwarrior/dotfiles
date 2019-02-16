@@ -54,8 +54,7 @@
 2. [Scrivner3](https://www.literatureandlatte.com/scrivener/overview)
 3. [Descript](https://www.descript.com)
 4. [Aeon Timeline 2](https://www.aeontimeline.com)
-5. [Xee3](https://theunarchiver.com/xee)
-6. [Phiewer](https://phiewer.com)
+5. [Xee^3](https://theunarchiver.com/xee)
 
 ## Video Conference
 
