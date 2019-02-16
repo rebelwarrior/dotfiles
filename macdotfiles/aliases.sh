@@ -210,7 +210,7 @@ fi
 
 alias pcat='pygmentize -f terminal256 -O style=monokai -g'
 
-if (ls $HOME/.jars/ | grep -q 'plantuml'); then
+if test -d $HOME/.jars && (ls $HOME/.jars/ | grep -q 'plantuml'); then
   function plantuml(){
     # Install the plantuml jar in a a folder called .jars on your home.
     java -jar $HOME/.jars/$(ls $HOME/.jars/ | grep 'plantuml' | head -1) $1

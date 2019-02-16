@@ -5,9 +5,11 @@ if [ $(uname) = "Darwin" ]; then
   touch $HOME/.zshrc
   cat macdotfiles/append.zshrc.sh >> $HOME/.zshrc
   touch $HOME/.aliases
-  cat macdotfiles/aliases >> $HOME/.aliases
+  cat macdotfiles/aliases.sh >> $HOME/.aliases
   touch $HOME/.vimrc
-  cat macdotfiles/vimrc >> $HOME/.vimrc
+  cat macdotfiles/vimrc.vim >> $HOME/.vimrc
+  touch $HOME/.gitconfig
+  cat macdotfiles/gitconfig >> $HOME/.gitconfig
   touch $HOME/.gitignore_global
   cat macdotfiles/gitignore_global >> $HOME/.gitignore_global
 else
