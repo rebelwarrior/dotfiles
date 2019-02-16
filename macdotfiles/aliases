@@ -26,7 +26,7 @@ alias tmux-named='tmux new -s'
 alias brew-uses='brew uses --installed'
 alias brew-requires='brew uses --installed'
 alias brew-deps='brew-dependencies' #Function Below
-alias brewbrew="brew update && brew upgrade && brew cleanup"
+alias brewup="brew upgrade && brew cleanup"
 alias bs="brew services"
 
 ## CoffeeScript
@@ -56,6 +56,9 @@ alias django-admin='django-admin.py'
 alias django-manage='python3 manage.py'
 alias pye='pyenv'
 alias p3='python3'
+
+## Rust Related 
+alias cargo-wasm='cargo build --release --target wasm32-unknown-unknown'
 
 ## ElasticSearch
 # alias els='elasticsearch'

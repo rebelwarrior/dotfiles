@@ -3,6 +3,9 @@
 ## Command Line Install
 
 1. [Homebrew](https://brew.sh)
+2. Git `brew install git`
+3. [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
+4. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
  
 ## Mac Applications 
 
@@ -12,6 +15,7 @@
 4. Programming Resource: [Dash](https://kapeli.com/dash)
 5. Text Editor: [TextMate](https://macromates.com/download)
 6. Text Editor: [Visual Studio Code](https://code.visualstudio.com/Download)
+  - Use Cmnd+Shft+P to open [shell pallet](https://code.visualstudio.com/docs/setup/mac) and then type `shell command`
 7. Text Editor: [Atom](https://atom.io)
 7. Web Browser: Google Chrome (if Desktop)
 8. Web Browser: [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
@@ -56,6 +60,7 @@
 4. [Aeon Timeline 2](https://www.aeontimeline.com)
 5. [Xee^3](https://theunarchiver.com/xee)
 
+
 ## Video Conference
 
 1. [Skype](https://www.skype.com/en/get-skype/)
@@ -66,4 +71,9 @@
 ## Considering 
 1. [Postico](https://eggerapps.at/postico/)
 2. Paw API vs. Postman
-3. Discord
+3. [Discord](https://discordapp.com/download)
+4. [Phiewer](https://phiewer.com)
+
+## Drivers
+1. Marble Mouse Logictech Driver
+2. [xbox360 Controller Driver](https://github.com/360Controller/360Controller/releases)
