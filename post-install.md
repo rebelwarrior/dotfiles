@@ -59,6 +59,7 @@
 3. [Descript](https://www.descript.com)
 4. [Aeon Timeline 2](https://www.aeontimeline.com)
 5. [Xee^3](https://theunarchiver.com/xee)
+6. [Intel Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget-20)
 
 
 ## Video Conference
