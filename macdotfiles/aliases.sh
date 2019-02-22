@@ -16,6 +16,7 @@ alias delete='trash' #see function below
 alias hide-icons='hideIcons' #see function below
 alias show-icons='showIcons' #see function below
 alias visualvm='jvisualvm'
+alias list-cpu='sysctl -n machdep.cpu.brand_string'
 
 ## Brew Related
 alias sha1='openssl sha1'
