@@ -27,8 +27,9 @@ alias tmux-named='tmux new -s'
 alias brew-uses='brew uses --installed'
 alias brew-requires='brew uses --installed'
 alias brew-deps='brew-dependencies' #Function Below
-alias brewup="brew upgrade && brew cleanup"
-alias bs="brew services"
+alias brewup='brew upgrade && brew cleanup'
+alias bs='brew services'
+alias brew-tree='brew deps --include-build --tree $(brew leaves)'
 
 ## CoffeeScript
 alias coffee6='coffee --nodejs --harmony'
