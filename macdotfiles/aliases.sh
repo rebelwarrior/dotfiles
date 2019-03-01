@@ -16,6 +16,7 @@ alias delete='trash' #see function below
 alias hide-icons='hideIcons' #see function below
 alias show-icons='showIcons' #see function below
 alias visualvm='jvisualvm'
+alias java-visual-vm='jvisualvm'
 alias list-cpu='sysctl -n machdep.cpu.brand_string' # lists CPU name
 # Mac has extened attributes and permisions that aren't part of Linux spec
 # `ls - l` shows `+` for extended permisions and `@` for extened attr. 
