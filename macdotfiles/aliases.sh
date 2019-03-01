@@ -16,7 +16,11 @@ alias delete='trash' #see function below
 alias hide-icons='hideIcons' #see function below
 alias show-icons='showIcons' #see function below
 alias visualvm='jvisualvm'
-alias list-cpu='sysctl -n machdep.cpu.brand_string'
+alias list-cpu='sysctl -n machdep.cpu.brand_string' # lists CPU name
+# Mac has extened attributes and permisions that aren't part of Linux spec
+# `ls - l` shows `+` for extended permisions and `@` for extened attr. 
+# extended permision are seen by adding `-e` to `ls`. 
+alias extended_attributes='xattr -l' # to expand the `@` sign in `ls -l` 
 
 ## Brew Related
 alias sha1='openssl sha1'
