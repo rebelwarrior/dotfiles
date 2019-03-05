@@ -8,6 +8,7 @@
 4. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) 
  - `brew install zsh-syntax-highlighting`
  - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+ - add `plugins=(git zsh-syntax-highlighting)` to `~/.zshrc`
  
 ## Mac Applications 
 
