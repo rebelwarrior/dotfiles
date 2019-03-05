@@ -5,7 +5,9 @@
 1. [Homebrew](https://brew.sh)
 2. Git `brew install git`
 3. [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
-4. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) `brew install zsh-syntax-highlighting`
+4. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) 
+ - `brew install zsh-syntax-highlighting`
+ - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
  
 ## Mac Applications 
 
