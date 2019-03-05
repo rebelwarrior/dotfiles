@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/env bash
 
 ### Aliases: ###
 
@@ -66,6 +66,7 @@ alias p3='python3'
 
 ## Rust Related 
 alias cargo-wasm='cargo build --release --target wasm32-unknown-unknown'
+alias rustdoc='rustup doc --std'	
 
 ## ElasticSearch
 # alias els='elasticsearch'
@@ -89,6 +90,7 @@ alias cargo-wasm='cargo build --release --target wasm32-unknown-unknown'
 if [ -e $HOME/.cargo ]; then
   source $HOME/.cargo/env
 fi 
+
 
 ## GO Lang
 # if [ -e /usr/local/opt/go ]; then
