@@ -19,6 +19,11 @@
 5. Text Editor: [TextMate](https://macromates.com/download)
 6. Text Editor: [Visual Studio Code](https://code.visualstudio.com/Download)
   - Use Cmnd+Shft+P to open [shell pallet](https://code.visualstudio.com/docs/setup/mac) and then type `shell command`
+  - To install extensions form the command line: `code --install-extension (|)` 
+  - Extensions:
+    1. `rust-lang.rust`
+    2. `bungcip.better-toml`
+    3. `sbrink.elm`
 7. Text Editor: [Atom](https://atom.io)
 7. Web Browser: Google Chrome (if Desktop)
 8. Web Browser: [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
