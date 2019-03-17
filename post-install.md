@@ -68,6 +68,7 @@
 4. [Aeon Timeline 2](https://www.aeontimeline.com)
 5. [Xee^3](https://theunarchiver.com/xee)
 6. [Intel Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget-20)
+7. [Microsoft Default Mail Setter App](https://support.microsoft.com/en-us/help/4483875/outlook-for-mac-support-utilities)
 
 
 ## Video Conference
