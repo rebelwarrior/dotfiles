@@ -24,6 +24,7 @@
     1. `rust-lang.rust`
     2. `bungcip.better-toml`
     3. `sbrink.elm`
+    4. `karunamurti.haml`
 7. Text Editor: [Atom](https://atom.io)
 7. Web Browser: Google Chrome (if Desktop)
 8. Web Browser: [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
