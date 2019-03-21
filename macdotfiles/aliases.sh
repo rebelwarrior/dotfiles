@@ -15,8 +15,6 @@ alias macjs='/System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc'
 alias delete='trash' #see function below
 alias hide-icons='hideIcons' #see function below
 alias show-icons='showIcons' #see function below
-alias visualvm='jvisualvm'
-alias java-visual-vm='jvisualvm'
 alias list-cpu='sysctl -n machdep.cpu.brand_string' # lists CPU name
 # Mac has extened attributes and permisions that aren't part of Linux spec
 # `ls - l` shows `+` for extended permisions and `@` for extened attr. 
@@ -57,6 +55,9 @@ alias rvm='rbenv'
 alias jks='bundle exec jekyll s'
 alias jkb='bundle exec jekyll build'
 
+## JRuby Related 
+alias jvm-visual='jvisualvm'
+alias jvm-console='jconsole'
 
 ## Python Related
 alias django-admin='django-admin.py'
