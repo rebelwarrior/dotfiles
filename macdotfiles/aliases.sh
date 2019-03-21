@@ -42,6 +42,7 @@ alias coffee-test='jasmine-node --coffee'
 
 ## Ruby Related
 alias be='bundle exec'
+alias binstubs='bundle install --binstubs'
 # For Sinatra
 alias sg='shotgun -p 3000'
 alias sgp='shotgun -s puma -p 3000 config.ru'
