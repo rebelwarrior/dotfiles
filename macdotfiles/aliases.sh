@@ -65,6 +65,7 @@ alias django-admin='django-admin.py'
 alias django-manage='python3 manage.py'
 alias pye='pyenv'
 alias p3='python3'
+alias pyevi='pyenv virtualenv'
 
 ## Rust Related 
 alias cargo-wasm='cargo build --release --target wasm32-unknown-unknown'
