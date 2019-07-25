@@ -5,7 +5,10 @@
 1. [Homebrew](https://brew.sh)
 2. Git `brew install git`
 3. [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
-4. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+4. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) 
+ - `brew install zsh-syntax-highlighting`
+ - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+ - add `plugins=(git zsh-syntax-highlighting)` to `~/.zshrc`
  
 ## Mac Applications 
 
@@ -16,6 +19,12 @@
 5. Text Editor: [TextMate](https://macromates.com/download)
 6. Text Editor: [Visual Studio Code](https://code.visualstudio.com/Download)
   - Use Cmnd+Shft+P to open [shell pallet](https://code.visualstudio.com/docs/setup/mac) and then type `shell command`
+  - To install extensions form the command line: `code --install-extension (|)` 
+  - Extensions:
+    1. `rust-lang.rust`
+    2. `bungcip.better-toml`
+    3. `sbrink.elm`
+    4. `karunamurti.haml`
 7. Text Editor: [Atom](https://atom.io)
 7. Web Browser: Google Chrome (if Desktop)
 8. Web Browser: [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
@@ -60,6 +69,7 @@
 4. [Aeon Timeline 2](https://www.aeontimeline.com)
 5. [Xee^3](https://theunarchiver.com/xee)
 6. [Intel Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget-20)
+7. [Microsoft Default Mail Setter App](https://support.microsoft.com/en-us/help/4483875/outlook-for-mac-support-utilities)
 
 
 ## Video Conference

@@ -1,4 +1,4 @@
-#/bin/sh
+#!/usr/bin/env bash
 
 ### Aliases: ###
 
@@ -16,6 +16,11 @@ alias delete='trash'         #see function below
 alias hide-icons='hideIcons' #see function below
 alias show-icons='showIcons' #see function below
 alias visualvm='jvisualvm'
+alias list-cpu='sysctl -n machdep.cpu.brand_string' # lists CPU name
+# Mac has extened attributes and permisions that aren't part of Linux spec
+# `ls - l` shows `+` for extended permisions and `@` for extened attr. 
+# extended permision are seen by adding `-e` to `ls`. 
+alias extended_attributes='xattr -l' # to expand the `@` sign in `ls -l` 
 
 ## Brew Related
 alias sha1='openssl sha1'
@@ -37,6 +42,7 @@ alias coffee-test='jasmine-node --coffee'
 
 ## Ruby Related
 alias be='bundle exec'
+alias binstubs='bundle install --binstubs'
 # For Rubocop
 alias rubocop-auto='rubocop --auto-correct --display-cop-names'
 alias rubocop-rails='rubocop --auto-correct --display-cop-names --rails'
@@ -55,15 +61,20 @@ alias jkb='bundle exec jekyll build'
 # For Pry
 alias prys='pry --simple-prompt'
 
+## JRuby Related 
+alias jvm-visual='jvisualvm'
+alias jvm-console='jconsole'
 
 ## Python Related
 alias django-admin='django-admin.py'
 alias django-manage='python3 manage.py'
 alias pye='pyenv'
 alias p3='python3'
+alias pyevi='pyenv virtualenv'
 
 ## Rust Related 
 alias cargo-wasm='cargo build --release --target wasm32-unknown-unknown'
+alias rustdoc='rustup doc --std'	
 
 ## Elm Related 
 alias elm-repl='elm repl'
@@ -96,6 +107,7 @@ alias hugo-server='hugo server -D'
 if [ -e $HOME/.cargo ]; then
   source $HOME/.cargo/env
 fi 
+
 
 ## GO Lang
 # if [ -e /usr/local/opt/go ]; then
