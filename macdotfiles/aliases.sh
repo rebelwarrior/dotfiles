@@ -1,4 +1,4 @@
-#! /bin/sh
+#/bin/sh
 
 ### Aliases: ###
 
@@ -12,11 +12,10 @@ alias cdb='popd'
 alias eject-usb='diskutil unmount'
 alias java_home='/usr/libexec/java_home'
 alias macjs='/System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc'
-alias delete='trash' #see function below
+alias delete='trash'         #see function below
 alias hide-icons='hideIcons' #see function below
 alias show-icons='showIcons' #see function below
 alias visualvm='jvisualvm'
-alias list-cpu='sysctl -n machdep.cpu.brand_string'
 
 ## Brew Related
 alias sha1='openssl sha1'
@@ -26,10 +25,9 @@ alias tmux-named='tmux new -s'
 ## Homebrew Specific
 alias brew-uses='brew uses --installed'
 alias brew-requires='brew uses --installed'
-alias brew-deps='brew-dependencies' #Function Below
-alias brewup='brew upgrade && brew cleanup'
-alias bs='brew services'
-alias brew-tree='brew deps --include-build --tree $(brew leaves)'
+alias brew-deps='brew-dependencies' #see function Below
+alias brewup="brew upgrade && brew cleanup"
+alias bs="brew services"
 
 ## CoffeeScript
 alias coffee6='coffee --nodejs --harmony'
@@ -39,6 +37,9 @@ alias coffee-test='jasmine-node --coffee'
 
 ## Ruby Related
 alias be='bundle exec'
+# For Rubocop
+alias rubocop-auto='rubocop --auto-correct --display-cop-names'
+alias rubocop-rails='rubocop --auto-correct --display-cop-names --rails'
 # For Sinatra
 alias sg='shotgun -p 3000'
 alias sgp='shotgun -s puma -p 3000 config.ru'
@@ -51,6 +52,8 @@ alias rvm='rbenv'
 # For Jekyll
 alias jks='bundle exec jekyll s'
 alias jkb='bundle exec jekyll build'
+# For Pry
+alias prys='pry --simple-prompt'
 
 
 ## Python Related
@@ -61,6 +64,15 @@ alias p3='python3'
 
 ## Rust Related 
 alias cargo-wasm='cargo build --release --target wasm32-unknown-unknown'
+
+## Elm Related 
+alias elm-repl='elm repl'
+
+## Kotlin Related 
+alias kotlin-repl='kotlinc-jvm'
+
+## Hugo Related
+alias hugo-server='hugo server -D'
 
 ## ElasticSearch
 # alias els='elasticsearch'
@@ -253,4 +265,9 @@ function invert-colors() {
 function disable-swipe-naviation() {
   defaults write com.operasoftware.Opera AppleEnableSwipeNavigateWithScrolls -bool FALSE
   defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
+}
+
+function generate-gemfile() {
+  touch Gemfile
+  echo "source 'https://rubygems.org'\n" >> Gemfile
 }
