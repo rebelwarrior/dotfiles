@@ -60,6 +60,7 @@ alias jks='bundle exec jekyll s'
 alias jkb='bundle exec jekyll build'
 # For Pry
 alias prys='pry --simple-prompt'
+alias spry='pry --simple-prompt'
 
 ## JRuby Related 
 alias jvm-visual='jvisualvm'
