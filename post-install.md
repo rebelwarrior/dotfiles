@@ -26,7 +26,7 @@
     3. `sbrink.elm`
     4. `karunamurti.haml`
 7. Text Editor: [Atom](https://atom.io)
-7. Web Browser: Google Chrome (if Desktop)
+7. Web Browser: [Google Chrome](https://www.google.com/chrome/) (if Desktop)
 8. Web Browser: [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
 9. Web Browser: [Opera](https://www.opera.com) (if Laptop)
 10. [Dropbox](https://www.dropbox.com/install)
