@@ -31,3 +31,6 @@ More from Ninite
 Media Related:
 [Lightworks](https://www.lwks.com) (video editor)
 [OBS Studio](https://obsproject.com) (video streaming)
+
+Windows 10:
+[New Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab)
