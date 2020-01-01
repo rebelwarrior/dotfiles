@@ -284,3 +284,17 @@ function generate-gemfile() {
   touch Gemfile
   echo "source 'https://rubygems.org'\n" >> Gemfile
 }
+
+function docker-init() {
+  touch .dockerignore 
+  touch Dockerfile 
+  echo "# Git\n.git\n.gitignore\n\n# Logs\nlog/*\n\n# Temp files\ntmp/*\n\n# Editor temp files\n*.swp\n*.swo\n" >> .dockerignore 
+}
+
+function time-machine-exclusions() {
+  echo "requires sudo"; 
+  # https://www.macworld.com/article/2033804/control-time-machine-from-the-command-line.html
+  sudo tmutil addexclusion -p ~/.rbenv/versions;
+  sudo tmutil addexclusion -p ~/.pyenv/versions;
+  sudo tmutil addexclusion -p ~/.rustup/toolchains;
+}
