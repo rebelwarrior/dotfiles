@@ -12,7 +12,12 @@ if [ -e $HOME/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; 
 fi 
 
 ### rbenv (RUBY)
-if (type rbenv >/dev/null 2>&1 || exit 1 ); then eval "$(rbenv init -)"; fi
+if (type rbenv >/dev/null 2>&1 || exit 1 ); then 
+  eval "$(rbenv init -)"; 
+  if (type brew >/dev/null 2>&1 || exit 1 ); then 
+    export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+  fi
+fi
 
 ### PyEnv
 # If getting a missing zlib run `xcode-select --install`
