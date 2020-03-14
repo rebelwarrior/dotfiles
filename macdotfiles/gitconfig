@@ -23,6 +23,8 @@
 	soft-reset = reset --soft HEAD^
 	# hard-reset = reset --hard HEAD^
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --branches --remotes --tags
+	pom = push origin master
+	hotspot = log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -r
 [apply]
 	whitespace = nowarn
 [color]
