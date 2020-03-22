@@ -50,8 +50,8 @@
 1. Ruby and RbEnv
  - `brew install ruby-build --HEAD`
  - `brew install rbenv` 
-1. [Elm Lang](https://elm-lang.org)
-2. ~~Java JDK~~ OpenJDK via homebrew
+2. [Elm Lang](https://elm-lang.org)
+3. ~~Java JDK~~ OpenJDK via homebrew
 3. [Julia Lang](https://julialang.org/downloads/)
 4. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/)
 5. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or VirtualBox
@@ -75,7 +75,9 @@
 4. [Descript](https://www.descript.com)
 5. [Aeon Timeline 2](https://www.aeontimeline.com)
 7. [Microsoft Default Mail Setter App](https://support.microsoft.com/en-us/help/4483875/outlook-for-mac-support-utilities)
-
+8. [Fire Alpaca](https://firealpaca.com/)
+9. PyCharm CE (IDE)
+10. OBS (Streaming)
 
 ## Video Conference
 
@@ -93,3 +95,4 @@
 ## Drivers
 1. Marble Mouse Logictech Driver
 2. [xbox360 Controller Driver](https://github.com/360Controller/360Controller/releases)
+3. Wacom Driver
