@@ -78,6 +78,7 @@
 8. [Fire Alpaca](https://firealpaca.com/)
 9. IDE: [PyCharm CE](https://www.jetbrains.com/pycharm/)
 10. Streaming:[OBS](https://obsproject.com/)
+11. qBitTorrent
 
 ## Video Conference
 
