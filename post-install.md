@@ -3,7 +3,7 @@
 ## Command Line Install
 
 1. [Homebrew](https://brew.sh)
-2. Git 
+2. [Git](https://en.wikipedia.org/wiki/Git)
  - `brew install git`
 3. [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
 4. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) 
@@ -76,8 +76,8 @@
 5. [Aeon Timeline 2](https://www.aeontimeline.com)
 7. [Microsoft Default Mail Setter App](https://support.microsoft.com/en-us/help/4483875/outlook-for-mac-support-utilities)
 8. [Fire Alpaca](https://firealpaca.com/)
-9. PyCharm CE (IDE)
-10. OBS (Streaming)
+9. IDE: [PyCharm CE](https://www.jetbrains.com/pycharm/)
+10. Streaming:[OBS](https://obsproject.com/)
 
 ## Video Conference
 
@@ -93,6 +93,6 @@
 4. ~~[Phiewer](https://phiewer.com)~~
 
 ## Drivers
-1. [Marble Mouse Logictech](https://www.logitech.com/en-us/product/trackman-marble-business) Driver
+1. [Marble Mouse Logictech](https://www.logitech.com/en-us/product/trackman-marble-business) Driver ([Logitech Control Center](https://support.logi.com/hc/en-us/articles/360025297833))
 2. [xbox360 Controller Driver](https://github.com/360Controller/360Controller/releases)
-3. Wacom Driver
+3. [Wacom Driver](https://www.wacom.com/en-us/support/product-support/drivers)
