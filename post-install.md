@@ -54,7 +54,7 @@
 3. ~~Java JDK~~ OpenJDK via homebrew
 3. [Julia Lang](https://julialang.org/downloads/)
 4. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/)
-5. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or VirtualBox
+5. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or [VirtualBox](https://www.virtualbox.org/)
 6. [PlantUML](http://plantuml.com)
 7. [Neo4J](https://neo4j.com/download-center/#community)
 
