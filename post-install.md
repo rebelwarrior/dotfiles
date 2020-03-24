@@ -43,7 +43,7 @@
 19. Amazon Apps: Amazon Music, Kindle App, Send to Kindle
 20. [Slack](https://slack.com/downloads/osx)
 21. [Steam App](https://store.steampowered.com/about/)
-
+22. [QGis](https://qgis.org/en/site/forusers/download.html)
 
 ## Programming Languages Apps
 
