@@ -78,13 +78,14 @@
 8. [Fire Alpaca](https://firealpaca.com/)
 9. IDE: [PyCharm CE](https://www.jetbrains.com/pycharm/)
 10. Streaming:[OBS](https://obsproject.com/)
-11. qBitTorrent
+11. [qBitTorrent](https://www.qbittorrent.org/)
 
 ## Video Conference
 
 1. [Skype](https://www.skype.com/en/get-skype/)
 2. [Zoom US](https://zoom.us)
 3. [Blue Jeans](https://www.bluejeans.com/downloads)
+
 (I hate all the others so I'll only install them if I need them, then quickly uninstall them.)
 
 ## Considering 
