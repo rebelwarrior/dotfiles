@@ -11,10 +11,11 @@
  - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
  - add `plugins=(git zsh-syntax-highlighting)` to `~/.zshrc`
 5. Command-line utilities
- a. htop
- b. nnn
- c. ncdu
- d. ssh-copy-id
+ 1. htop
+ 2. nnn
+ 3. ncdu
+ 4. ssh-copy-id
+ 5. tree
  
 ## Mac Applications 
 
