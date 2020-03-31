@@ -71,7 +71,9 @@
 3. [Magnet](https://magnet.crowdcafe.com/)
 4. [Spark](https://sparkmailapp.com/)
 6. iWork Suite (Pages, Numbers, Keynote) 
-5. ~~TouchDraw (works a bit like Visio)~~
+5. ~~[TouchDraw](https://apps.apple.com/us/app/touchdraw/id548887176?mt=12) (works a bit like Visio)~~
+7. [WireGuard](https://apps.apple.com/us/app/wireguard/id1451685025?mt=12)
+8. [Seashore](https://apps.apple.com/us/app/seashore/id1448648921?mt=12)
 
 ## Experimental 
 
