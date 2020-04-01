@@ -41,3 +41,7 @@
 #   email = {{email}}
 # [core]
 #   sshCommand "ssh -i ~/.ssh/id_rsa_gov -F /dev/null"
+
+## To Generate rsa files
+# ssh-keygen -f id_rsa_github
+# ssh-keygen -f id_rsa_bitbucket
