@@ -45,3 +45,6 @@
 ## To Generate rsa files
 # ssh-keygen -f id_rsa_github
 # ssh-keygen -f id_rsa_bitbucket
+
+## To Add rsa file password to key chain
+# ssh-add -K ~/.ssh/{{file_name}}
