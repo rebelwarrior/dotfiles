@@ -87,6 +87,7 @@
 9. IDE: [PyCharm CE](https://www.jetbrains.com/pycharm/)
 10. Streaming:[OBS](https://obsproject.com/)
 11. [qBitTorrent](https://www.qbittorrent.org/)
+12. [MalwarebytesMac](https://www.malwarebytes.com/mac/)
 
 ## Video Conference
 
