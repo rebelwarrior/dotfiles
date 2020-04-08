@@ -88,6 +88,7 @@
 10. Streaming:[OBS](https://obsproject.com/)
 11. [qBitTorrent](https://www.qbittorrent.org/)
 12. [MalwarebytesMac](https://www.malwarebytes.com/mac/)
+13. [VLC Media Player](https://www.videolan.org/vlc/)
 
 ## Video Conference
 
