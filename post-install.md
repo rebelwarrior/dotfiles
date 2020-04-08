@@ -103,7 +103,8 @@
 2. [Paw API](https://paw.cloud/) vs. [Postman](https://www.postman.com/)
 3. [Discord](https://discordapp.com/download)
 4. ~~[Phiewer](https://phiewer.com)~~
-5. [DBeaver](https://dbeaver.io/) or [Navicat](https://customer.navicat.com/)
+5. [DBeaver](https://dbeaver.io/) or ~~[Navicat](https://customer.navicat.com/)~~ (expensive)
+5. [Witch Switcher](https://manytricks.com/witch/)
 
 ## Drivers
 1. [Marble Mouse Logictech](https://www.logitech.com/en-us/product/trackman-marble-business) Driver ([Logitech Control Center](https://support.logi.com/hc/en-us/articles/360025297833))
