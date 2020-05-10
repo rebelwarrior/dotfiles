@@ -24,8 +24,7 @@
 3. FlyCut (copy manager) 
  - `brew cask install flycut`
 4. Programming Resource: [Dash](https://kapeli.com/dash)
-5. Text Editor: [TextMate](https://macromates.com/download)
- 1. [Crystal lang plugin](https://github.com/crystal-lang-tools/Crystal.tmbundle)
+5. Text Editor: [TextMate](https://macromates.com/download) [Crystal lang plugin](https://github.com/crystal-lang-tools/Crystal.tmbundle)
 6. Text Editor: [Visual Studio Code](https://code.visualstudio.com/Download)
   - Use Cmnd+Shft+P to open [shell pallet](https://code.visualstudio.com/docs/setup/mac) and then type `shell command`
   - To install extensions form the command line: `code --install-extension (|)` 
