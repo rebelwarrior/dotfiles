@@ -9,3 +9,4 @@ call plug#begin()
 "... <snip other plugins>
   Plug 'dart-lang/dart-vim-plugin'
 call plug#end()
+"use :PlugInstall from inside vim
