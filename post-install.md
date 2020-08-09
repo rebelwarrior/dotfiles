@@ -100,13 +100,14 @@
 (I hate all the others so I'll only install them if I need them, then quickly uninstall them.)
 
 ## Considering 
-1. [Postico](https://eggerapps.at/postico/)
+1. [Postico](https://eggerapps.at/postico/) -thumbs up-
 2. [Paw API](https://paw.cloud/) vs. [Postman](https://www.postman.com/)
 3. [Discord](https://discordapp.com/download)
 4. ~~[Phiewer](https://phiewer.com)~~
 5. [DBeaver](https://dbeaver.io/) or ~~[Navicat](https://customer.navicat.com/)~~ (expensive)
 6. [Witch Switcher](https://manytricks.com/witch/)
 7. [Microsoft Edge](https://www.microsoft.com/en-us/edge/) 
+8. [Lossless-cut](https://github.com/mifi/lossless-cut)
 
 ## Drivers
 1. [Marble Mouse Logictech](https://www.logitech.com/en-us/product/trackman-marble-business) Driver ([Logitech Control Center](https://support.logi.com/hc/en-us/articles/360025297833))
