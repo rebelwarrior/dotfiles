@@ -50,6 +50,7 @@
 20. [Slack](https://slack.com/downloads/osx)
 21. [Steam App](https://store.steampowered.com/about/)
 22. [QGis](https://qgis.org/en/site/forusers/download.html)
+23. [SoundSource](https://www.rogueamoeba.com/soundsource/)
 
 ## Programming Languages Apps
 
