@@ -35,3 +35,6 @@ Media Related:
 
 Windows 10:
 [New Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab)
+
+Windows Command for Checksums:
+`CertUtil -hashfile file_name sha256`
