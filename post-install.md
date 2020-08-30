@@ -91,6 +91,7 @@
 11. [qBitTorrent](https://www.qbittorrent.org/)
 12. [MalwarebytesMac](https://www.malwarebytes.com/mac/)
 13. [VLC Media Player](https://www.videolan.org/vlc/)
+14. [Macs Fan Control](https://crystalidea.com/macs-fan-control/download)
 
 ## Video Conference
 
