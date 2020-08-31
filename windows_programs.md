@@ -25,13 +25,18 @@ More from Ninite
 3. GiMP
 4. Audacity
 5. Revo Uninstaller?
-6  Adopt Open JDK
+6. Adopt Open JDK ??
+7. Zoom
 
+Office:
+- [OnlyOffice](https://www.onlyoffice.com/en/download-desktop.aspx)
 
 Media Related:
 [Lightworks](https://www.lwks.com) (video editor)
 [OBS Studio](https://obsproject.com) (video streaming)
 [AffinityPhoto](https://affinity.serif.com/en-gb/photo/) (image editing)
+[Audacity](https://www.audacityteam.org/download/windows/)
+[FireAlpaca](https://firealpaca.com/download/)
 
 Windows 10:
 [New Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab)
