@@ -85,6 +85,10 @@ alias kotlin-repl='kotlinc-jvm'
 
 ## Hugo Related
 alias hugo-server='hugo server -D'
+alias hugo-build='hugo --cleanDestinationDir' # Hugo build to public
+alias hugo-build-minify='hugo --cleanDestinationDir --minify'
+alias hugo-new='hugo new site'
+alias hugo-new-theme='hugo new theme'
 
 ## ElasticSearch
 # alias els='elasticsearch'
@@ -170,16 +174,16 @@ function dashq(){
 # fi
 
 ## Atom Packages
-function setup_atom(){
-  # apm install language-mjml;
-  apm install language-elm;
-  apm install language-elixir;
-  apm install elm-format;
-  #elm beautify
-  apm install file-icons;
-  apm install mini-map;
-  apm install minimap-highlight-selected;
-}
+#function setup_atom(){
+#  # apm install language-mjml;
+#  apm install language-elm;
+#  apm install language-elixir;
+#  apm install elm-format;
+#  #elm beautify
+#  apm install file-icons;
+#  apm install mini-map;
+#  apm install minimap-highlight-selected;
+#}
 
 ### Mac Only ###
 
