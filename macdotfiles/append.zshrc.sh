@@ -1,3 +1,5 @@
+### ZSH Theme suggestion:
+# kolo
 
 ### Aliases
 source ~/.aliases
