@@ -121,7 +121,9 @@ fi
 # fi
 
 ## Sublime Text
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+if [ -e /Applications/Sublime Text.app]; then
+  export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+fi
 
 ### Applications: ###
 
