@@ -8,6 +8,7 @@ alias las='ls -lAhgo'
 alias z='zsh --login'
 alias cdd='pushd'
 alias cdb='popd'
+alias lime='subl'
 
 ## Mac Only ##
 alias eject-usb='diskutil unmount'
@@ -119,6 +120,8 @@ fi
 #   export PATH=$PATH:/usr/local/opt/go/libexec/bin
 # fi
 
+## Sublime Text
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 ### Applications: ###
 
