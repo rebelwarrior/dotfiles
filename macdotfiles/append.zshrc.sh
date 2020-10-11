@@ -7,7 +7,6 @@ source ~/.aliases
 ### API Settings for Amazon S3 & Google API
 source ~/.secret
 
-
 ### zsh-syntax-highlighting
 if [ -e $HOME/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then 
   source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -35,3 +34,7 @@ fi
 #   export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #   [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # fi
+
+## Blueutil turn off power to Bluetooth
+# blueutil --power 0
+
