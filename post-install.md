@@ -43,7 +43,7 @@
 13. VPN Software
 14. [Scapple](https://www.literatureandlatte.com/scapple/download)
 15. [Deckset](https://www.deckset.com)
-16. [LibreOffice](https://www.libreoffice.org) (if desktop)
+16. ~[LibreOffice](https://www.libreoffice.org) (if desktop)~
 17. [CrossOver](https://www.codeweavers.com)
 18. Readdle's [PDF Expert](https://pdfexpert.com)
 19. Amazon Apps: Amazon Music, Kindle App, Send to Kindle
@@ -51,6 +51,7 @@
 21. [Steam App](https://store.steampowered.com/about/)
 22. [QGis](https://qgis.org/en/site/forusers/download.html)
 23. [SoundSource](https://www.rogueamoeba.com/soundsource/)
+23. [OnlyOffice](https://www.onlyoffice.com/en/desktop.aspx)
 
 ## Programming Languages Apps
 
