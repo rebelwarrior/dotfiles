@@ -40,6 +40,7 @@
 10. [Dropbox](https://www.dropbox.com/install)
 11. Programming Resource: [Postgres App](https://postgresapp.com/downloads.html)
 12. Programming Resource: [DBeaver](https://dbeaver.io/download/)
+13. Programming Resource: [Postico](https://eggerapps.at/postico/) -thumbs up-
 13. VPN Software
 14. [Scapple](https://www.literatureandlatte.com/scapple/download)
 15. [Deckset](https://www.deckset.com)
@@ -103,7 +104,6 @@
 (I hate all the others so I'll only install them if I need them, then quickly uninstall them.)
 
 ## Considering 
-1. [Postico](https://eggerapps.at/postico/) -thumbs up-
 2. [Paw API](https://paw.cloud/) vs. [Postman](https://www.postman.com/)
 3. [Discord](https://discordapp.com/download)
 4. ~~[Phiewer](https://phiewer.com)~~
