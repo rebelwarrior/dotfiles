@@ -51,7 +51,7 @@
 21. [Steam App](https://store.steampowered.com/about/)
 22. [QGis](https://qgis.org/en/site/forusers/download.html)
 23. [SoundSource](https://www.rogueamoeba.com/soundsource/)
-23. [OnlyOffice](https://www.onlyoffice.com/en/desktop.aspx)
+23. [OnlyOffice](https://www.onlyoffice.com/en/desktop.aspx) (Set font hinting to OS-X if on mac)
 
 ## Programming Languages Apps
 
