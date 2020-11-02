@@ -92,6 +92,12 @@ alias hugo-build-minify='hugo --cleanDestinationDir --minify'
 alias hugo-new='hugo new site'
 alias hugo-new-theme='hugo new theme'
 
+## Sublime Text
+alias lime='subl'
+
+## Deno Related
+alias deno-file-server='deno run --allow-net --allow-read https://deno.land/std/http/file_server.ts'
+
 ## ElasticSearch
 # alias els='elasticsearch'
 # alias els_nodes="curl 'localhost:9200/_cat/nodes?v' "
