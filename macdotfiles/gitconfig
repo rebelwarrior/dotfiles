@@ -25,6 +25,7 @@
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --branches --remotes --tags
 	pom = push origin master
 	hotspot = log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -r
+	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
 [apply]
 	whitespace = nowarn
 [color]
