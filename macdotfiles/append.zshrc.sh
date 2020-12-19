@@ -29,6 +29,12 @@ if (type pyenv-virtualenv-init >/dev/null 2>&1 || exit 1 ); then
   export WORKON_HOME=$HOME/.virtualenvs
 fi
 
+## Deno
+if test -d "/Users/davidacevedo/.deno"; then 
+  export DENO_INSTALL="/Users/davidacevedo/.deno"
+  export PATH="$DENO_INSTALL/bin:$PATH"
+fi
+
 ### Added for RVM
 # if [ -e $HOME/.rvm/scripts/rvm ]; then
 #   export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
