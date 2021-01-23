@@ -8,7 +8,7 @@ alias las='ls -lAhgo'
 alias z='zsh --login'
 alias cdd='pushd'
 alias cdb='popd'
-alias lime='subl'
+alias tree2="tree -L 2 ."
 
 ## Mac Only ##
 alias eject-usb='diskutil unmount'
@@ -61,9 +61,10 @@ alias jruby-lint='jrlint'
 ## JRuby Opts
 # export JRUBY_OPTS="-J-XX:+UseParallelGC" # Using different Garbage Collector
 alias rake-tasks='rake -T'
+# For Rails
+alias rails6='rails new --skip-webpack-install --skip-test'
 
-
-## JavaScript Related 
+## JavaScript / Node Related 
 alias safer-npm='npm config set ignore-scripts true'
 
 ## Python Related
@@ -96,6 +97,7 @@ alias hugo-new-theme='hugo new theme'
 alias lime='subl'
 
 ## Deno Related
+alias update-deno='curl -fsSL https://deno.land/x/install/install.sh | sh'
 alias deno-file-server='deno run --allow-net --allow-read https://deno.land/std/http/file_server.ts'
 
 ## ElasticSearch
@@ -118,18 +120,17 @@ alias deno-file-server='deno run --allow-net --allow-read https://deno.land/std/
 
 ## Rust Related
 if [ -e $HOME/.cargo ]; then
+  export PATH="$HOME/.cargo/bin:$PATH"
   source $HOME/.cargo/env
 fi 
 
 ## GO Lang
-# if [ -e /usr/local/opt/go ]; then
-#   export PATH=$PATH:/usr/local/opt/go/libexec/bin
-# fi
+# if [ -e /usr/local/opt/go ]; then; export PATH=$PATH:/usr/local/opt/go/libexec/bin; fi
 
 ## Sublime Text
-if [ -e /Applications/Sublime Text.app]; then
-  export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-fi
+alias lime='subl'
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
 
 ### Applications: ###
 
@@ -153,6 +154,9 @@ alias neo4j="/usr/local/neo4j/bin/neo4j"
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias safari='open -a Safari'
 alias opera='/Applications/Opera.app/Contents/MacOS/Opera'
+
+## Opera Driver Location (similar to chrome driver) get from GitHub
+export OPERA_DRIVER_HOME="/usr/local/operadriver_mac64"
 
 
 ### Functions: ###
@@ -320,3 +324,6 @@ function time-machine-exclusions() {
   sudo tmutil addexclusion -p ~/.pyenv/versions;
   sudo tmutil addexclusion -p ~/.rustup/toolchains;
 }
+
+## BlueTooth 
+alias list-bluetooth="system_profiler SPBluetoothDataType"
