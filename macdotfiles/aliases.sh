@@ -323,6 +323,7 @@ function time-machine-exclusions() {
   sudo tmutil addexclusion -p ~/.rbenv/versions;
   sudo tmutil addexclusion -p ~/.pyenv/versions;
   sudo tmutil addexclusion -p ~/.rustup/toolchains;
+  sudo tmutil addexclusion -p ~/.deno/bin;
 }
 
 ## BlueTooth 
