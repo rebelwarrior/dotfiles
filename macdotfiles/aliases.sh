@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-
+################
 ### Aliases: ###
+################
 
 alias las='ls -lAhgo'
 # alias zsh='zsh --login'
@@ -43,6 +44,7 @@ alias brew-deps='brew-dependencies' #see function Below
 
 ## Ruby Related
 alias be='bundle exec'
+alias updategems='gem update --system'
 # For Rubocop
 alias rubocop-auto='rubocop --auto-correct --display-cop-names' # -Da
 alias rubocop-rails='rubocop --auto-correct --display-cop-names --rails'
@@ -63,6 +65,8 @@ alias jruby-lint='jrlint'
 alias rake-tasks='rake -T'
 # For Rails
 alias rails6='rails new --skip-webpack-install --skip-test'
+# For Jekyll
+alias jekyll-dev='be jekyll serve --config _config.dev.yml'
 
 ## JavaScript / Node Related 
 alias safer-npm='npm config set ignore-scripts true'
@@ -82,6 +86,9 @@ alias elm-repl='elm repl'
 
 ## Kotlin Related 
 alias kotlin-repl='kotlinc-jvm'
+
+## Elixir Related
+export KERL_BUILD_DOCS="yes" # try with `h :calendar.gregorian_seconds_to_datetime`
 
 ## Git Related
 alias git-hotspot='git log --format=format: --name-only | egrep -v "^$" | sort | uniq -c | sort -r'
@@ -115,6 +122,10 @@ alias deno-file-server='deno run --allow-net --allow-read https://deno.land/std/
 #     fi
 #     docker run -ti -e "TERM=xterm-256color" "$@"
 # }
+
+## Scala
+alias sbt8='sbt -java-home /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home'
+
 
 ### Paths: ###
 
@@ -304,9 +315,15 @@ function disable-swipe-naviation() {
 }
 
 ## Ruby Gemfile generate w/ first line.
-function generate-gemfile() {
+function gemfile() {
+  echo "Generating Gemfile"
   touch Gemfile
   echo "source 'https://rubygems.org'\n" >> Gemfile
+}
+
+## Tomcat
+function tomcat() {
+  echo("catalina run")
 }
 
 ## Initialize Docker
