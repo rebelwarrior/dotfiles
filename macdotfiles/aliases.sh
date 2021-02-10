@@ -174,7 +174,9 @@ alias opera='/Applications/Opera.app/Contents/MacOS/Opera'
 export OPERA_DRIVER_HOME="/usr/local/operadriver_mac64"
 
 
+##################
 ### Functions: ###
+##################
 
 ## PostgresQL
 function pg(){
@@ -222,7 +224,10 @@ function setup_vim(){
   git clone git://github.com/jiangmiao/auto-pairs.git ~/.vim/bundle/auto-pairs
 }
 
+
+################
 ### Mac Only ###
+################
 
 ## Trash files
 function trash(){
@@ -250,8 +255,10 @@ fi
 # /usr/libexec/java_home
 # jre/lib/security
 
-
+####################
 ### Experimental ###
+####################
+
 ## Setting up alias for Julia
 if [ -e ~/.julia ]; then 
   alias julia="/Applications/\"$(ls /Applications | grep 'Julia' | head -1)\"/Contents/Resources/julia/bin/julia";
