@@ -87,9 +87,6 @@ alias elm-repl='elm repl'
 ## Kotlin Related 
 alias kotlin-repl='kotlinc-jvm'
 
-## Elixir Related
-export KERL_BUILD_DOCS="yes" # try with `h :calendar.gregorian_seconds_to_datetime`
-
 ## Git Related
 alias git-hotspot='git log --format=format: --name-only | egrep -v "^$" | sort | uniq -c | sort -r'
 
@@ -127,7 +124,12 @@ alias deno-file-server='deno run --allow-net --allow-read https://deno.land/std/
 alias sbt8='sbt -java-home /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home'
 
 
+##############
 ### Paths: ###
+##############
+
+## Elixir Related
+export KERL_BUILD_DOCS="yes" # try with `h :calendar.gregorian_seconds_to_datetime`
 
 ## Rust Related
 if [ -e $HOME/.cargo ]; then
@@ -143,7 +145,9 @@ alias lime='subl'
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 
+#####################
 ### Applications: ###
+#####################
 
 ## For PostgresQL App
 if [ -e /Applications/Postgres.app ]; then
