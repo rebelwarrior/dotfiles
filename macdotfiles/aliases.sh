@@ -101,8 +101,11 @@ alias hugo-new-theme='hugo new theme'
 alias lime='subl'
 
 ## Deno Related
-alias update-deno='curl -fsSL https://deno.land/x/install/install.sh | sh'
-alias deno-file-server='deno run --allow-net --allow-read https://deno.land/std/http/file_server.ts'
+alias deno-update='deno --version && curl -fsSL https://deno.land/x/install/install.sh | sh'
+alias deno-fileserver='deno run --allow-net --allow-read https://deno.land/std/http/file_server.ts'
+
+## Tailwind CSS
+alias tailwind-build-css='npx tailwindcss-cli@latest build -o tailwind.css'
 
 ## ElasticSearch
 # alias els='elasticsearch'
@@ -158,7 +161,10 @@ fi
 
 ## Neo4j (Neo4j_Home to be set to where you put the tar export.) 
 export NEO4J_HOME="/usr/local/neo4j"
+export NEO4J_CONF="/usr/local/neo4j/conf"
 alias neo4j="/usr/local/neo4j/bin/neo4j"
+alias neo4j-admin="/usr/local/neo4j/bin/neo4j-admin"
+alias cypher-shell="/usr/local/neo4j/bin/cypher-shell"
 
 ## JOSM
 # if [ -e ~/Applications/JOSM.app ]; then
@@ -282,19 +288,22 @@ fi
 
 
 ## PlantUML
-if test -d $HOME/.jars && (ls $HOME/.jars/ | grep -q 'plantuml'); then
+# if test -d $HOME/.jars && (ls $HOME/.jars/ | grep -q 'plantuml'); then
+if [ -e ~/.jars/plantuml.jar ]; then
   function plantuml(){
-    # Install the plantuml jar in a a folder called .jars on your home.
-    java -jar $HOME/.jars/$(ls $HOME/.jars/ | grep 'plantuml' | head -1) $1
+    ## Install the plantuml jar in a a folder called .jars on your home and call it plantuml.jar.
+    # java -jar $HOME/.jars/$(ls $HOME/.jars/ | grep 'plantuml' | head -1) $1
+    java -jar $HOME/.jars/plantuml.jar $1
   }
 fi
 
-# if test -d $HOME/.jars && (ls $HOME/.jars/ | grep -q 'bfg'); then
-#   function bigfg(){
-#     # Install the bfg jar in a a folder called .jars on your home.
-#     java -jar $HOME/.jars/$(ls $HOME/.jars/ | grep 'bfg' | head -1) $1
-#   }
-# fi
+## BFG 
+if test -d $HOME/.jars && (ls $HOME/.jars/ | grep -q 'bfg'); then
+  function bigfg(){
+    # Install the bfg jar in a a folder called .jars on your home.
+    java -jar $HOME/.jars/$(ls $HOME/.jars/ | grep 'bfg' | head -1) $1
+  }
+fi
 
 ## Minify for Elm Only
 function minify(){
