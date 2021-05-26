@@ -12,6 +12,10 @@ if [ $(uname) = "Darwin" ]; then
   cat macdotfiles/gitconfig >> $HOME/.gitconfig
   touch $HOME/.gitignore_global
   cat macdotfiles/gitignore_global >> $HOME/.gitignore_global
+  touch $HOME/.profile
+  cat macdotfiles/append.profile.sh >> $HOME/.profile
+  touch $HOME/.zprofile
+  cat macdotfiles/append.zprofile.sh >> $HOME/.zprofile
 else
   touch $HOME/.secret
   touch $HOME/.zshrc
