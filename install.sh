@@ -26,4 +26,6 @@ else
   cat macdotfiles/vimrc >> $HOME/.vimrc
   touch $HOME/.gitignore_global
   cat linuxdotfiles/gitignore_global >> $HOME/.gitignore_global
+  touch $HOME/.zprofile
+  cat macdotfiles/append.zprofile.sh >> $HOME/.zprofile
 fi
