@@ -9,7 +9,7 @@ if [ $(uname) = "Darwin" ]; then
   touch $HOME/.vimrc
   cat macdotfiles/vimrc.vim >> $HOME/.vimrc
   touch $HOME/.gitconfig
-  cat macdotfiles/gitconfig >> $HOME/.gitconfig
+  cat macdotfiles/gitconfig.toml >> $HOME/.gitconfig
   touch $HOME/.gitignore_global
   cat macdotfiles/gitignore_global >> $HOME/.gitignore_global
   touch $HOME/.profile
@@ -24,6 +24,8 @@ else
   cat linuxdotfiles/aliases >> $HOME/.aliases
   touch $HOME/.vimrc
   cat macdotfiles/vimrc >> $HOME/.vimrc
+  touch $HOME/.gitconfig
+  cat macdotfiles/gitconfig.toml >> $HOME/.gitconfig
   touch $HOME/.gitignore_global
   cat linuxdotfiles/gitignore_global >> $HOME/.gitignore_global
   touch $HOME/.zprofile
