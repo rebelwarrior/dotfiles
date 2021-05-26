@@ -8,4 +8,5 @@
 gem install bundler
 gem install pry
 gem install ffi
+gem install rubocop
 ```
