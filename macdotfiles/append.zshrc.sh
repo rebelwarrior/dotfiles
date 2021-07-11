@@ -1,5 +1,15 @@
-### ZSH Theme suggestion:
-# kolo
+### Oh My Zsh
+
+## Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+## Theme
+# ZSH_THEME="robbyrussell"
+ZSH_THEME=random
+ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "kolo" )
+## Plugin
+plugins=(git)
+## Load Oh My Zsh
+source $ZSH/oh-my-zsh.sh
 
 ### Aliases
 source ~/.aliases
