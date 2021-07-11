@@ -8,9 +8,15 @@ source ~/.aliases
 source ~/.secret
 
 ### zsh-syntax-highlighting
+if [-e /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh]; then 
+  # Homebrew Installed
+	source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 if [ -e $HOME/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then 
+  # Git cloned into .oh-my-zsh non-plugon place.
   source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi 
+
 
 ### rbenv (RUBY)
 if (type rbenv >/dev/null 2>&1 || exit 1 ); then 
