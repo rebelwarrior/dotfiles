@@ -68,7 +68,7 @@
 4. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/)
 5. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or [VirtualBox](https://www.virtualbox.org/)
 6. [PlantUML](http://plantuml.com)
-7. [Neo4J](https://neo4j.com/download-center/#community)
+7. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11)
 8. [JVisualVM](https://visualvm.github.io/download.html)
 
 ## Mac App Store Apps
