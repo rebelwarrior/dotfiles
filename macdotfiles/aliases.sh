@@ -147,6 +147,10 @@ fi
 alias lime='subl'
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
+## Opera Driver Location (similar to chrome driver) get from GitHub
+# https://github.com/operasoftware/operachromiumdriver
+export OPERA_DRIVER_HOME="/usr/local/operadriver_mac64"
+
 
 #####################
 ### Applications: ###
@@ -175,9 +179,6 @@ alias cypher-shell="/usr/local/neo4j/bin/cypher-shell"
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias safari='open -a Safari'
 alias opera='/Applications/Opera.app/Contents/MacOS/Opera'
-
-## Opera Driver Location (similar to chrome driver) get from GitHub
-export OPERA_DRIVER_HOME="/usr/local/operadriver_mac64"
 
 
 ##################
