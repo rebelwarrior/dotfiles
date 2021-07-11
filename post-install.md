@@ -35,32 +35,33 @@
     3. `sbrink.elm`
     4. `karunamurti.haml`
 7. Text Editor: [Atom](https://atom.io)
-7. Web Browser: [Google Chrome](https://www.google.com/chrome/) (if Desktop)
-8. Web Browser: [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
-9. Web Browser: [Opera](https://www.opera.com) (if Laptop)
-10. [Dropbox](https://www.dropbox.com/install)
-11. Programming Resource: [Postgres App](https://postgresapp.com/downloads.html)
-12. Programming Resource: [DBeaver](https://dbeaver.io/download/)
-13. Programming Resource: [Postico](https://eggerapps.at/postico/) -thumbs up-
-13. VPN Software
-14. [Scapple](https://www.literatureandlatte.com/scapple/download)
-15. [Deckset](https://www.deckset.com)
-16. ~[LibreOffice](https://www.libreoffice.org) (if desktop)~
-17. [CrossOver](https://www.codeweavers.com)
-18. Readdle's [PDF Expert](https://pdfexpert.com)
-19. Amazon Apps: Amazon Music, Kindle App, Send to Kindle
-20. [Slack](https://slack.com/downloads/osx)
-21. [Steam App](https://store.steampowered.com/about/)
-22. [QGis](https://qgis.org/en/site/forusers/download.html)
-23. [SoundSource](https://www.rogueamoeba.com/soundsource/)
-24. [OnlyOffice](https://www.onlyoffice.com/en/desktop.aspx) (Set font hinting to OS-X if on mac)
-25. [Dropbox](https://www.dropbox.com/)
+8. Web Browser: [Google Chrome](https://www.google.com/chrome/) (if Desktop)
+9. Web Browser: [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
+10. Web Browser: [Opera](https://www.opera.com) (if Laptop)
+11. Synching Files [Dropbox](https://www.dropbox.com/install)
+12. Programming Resource: [Postgres App](https://postgresapp.com/downloads.html)
+13. Programming Resource: [DBeaver](https://dbeaver.io/download/)
+14. Programming Resource: [Postico](https://eggerapps.at/postico/) -thumbs up-
+15. VPN Software
+16. [Scapple](https://www.literatureandlatte.com/scapple/download) (M1 Compatible)
+17. [Deckset](https://www.deckset.com) (Possibly M1?)
+18. ~[LibreOffice](https://www.libreoffice.org) (if desktop)~ Use OnlyOffice below.
+19. [CrossOver](https://www.codeweavers.com) (Rosetta2 compatible)
+20. Readdle's [PDF Expert](https://pdfexpert.com) (M1 Optimized)
+21. Amazon Apps: Amazon Music, Kindle App, Send to Kindle
+22. [Slack](https://slack.com/downloads/osx)
+23. [Steam App](https://store.steampowered.com/about/) (only Rosetta2...)
+24. [QGis](https://qgis.org/en/site/forusers/download.html)
+25. [SoundSource](https://www.rogueamoeba.com/soundsource/)
+26. [OnlyOffice](https://www.onlyoffice.com/en/desktop.aspx) (Set font hinting to OS-X if on mac)
+
 
 ## Programming Languages Apps
 
 1. Ruby and RbEnv
  - `brew install ruby-build --HEAD`
  - `brew install rbenv` 
+2. [NodeJs]() (M1 Optimized in latest version)
 2. [Elm Lang](https://elm-lang.org)
 3. ~~Java JDK~~ OpenJDK via homebrew
 3. [Julia Lang](https://julialang.org/downloads/)
@@ -72,8 +73,8 @@
 
 ## Mac App Store Apps
 
-1. [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
-2. [Affinity Photo](https://affinity.serif.com/en-gb/photo/)
+1. [Affinity Designer](https://affinity.serif.com/en-gb/designer/) (M1 Optimized)
+2. [Affinity Photo](https://affinity.serif.com/en-gb/photo/) (M1 Optimized)
 3. [Magnet](https://magnet.crowdcafe.com/)
 4. [Spark](https://sparkmailapp.com/)
 6. iWork Suite (Pages, Numbers, Keynote) 
@@ -94,13 +95,13 @@
 10. Streaming:[OBS](https://obsproject.com/)
 11. [qBitTorrent](https://www.qbittorrent.org/)
 12. [MalwarebytesMac](https://www.malwarebytes.com/mac/)
-13. [VLC Media Player](https://www.videolan.org/vlc/)
+13. [VLC Media Player](https://www.videolan.org/vlc/) (M1 Optimized)
 14. [Macs Fan Control](https://crystalidea.com/macs-fan-control/download)
 
 ## Video Conference
 
 1. [Skype](https://www.skype.com/en/get-skype/)
-2. [Zoom US](https://zoom.us)
+2. [Zoom US](https://zoom.us) (M1 Optimized)
 3. [Blue Jeans](https://www.bluejeans.com/downloads)
 
 (I hate all the others so I'll only install them if I need them, then quickly uninstall them.)
@@ -119,3 +120,6 @@
 1. [Marble Mouse Logictech](https://www.logitech.com/en-us/product/trackman-marble-business) Driver ([Logitech Control Center](https://support.logi.com/hc/en-us/articles/360025297833))
 2. [xbox360 Controller Driver](https://github.com/360Controller/360Controller/releases)
 3. [Wacom Driver](https://www.wacom.com/en-us/support/product-support/drivers)
+
+## M1 compatible
+Check this [website](https://isapplesiliconready.com/for/m1)
