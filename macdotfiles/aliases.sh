@@ -101,7 +101,6 @@ alias hugo-new-theme='hugo new theme'
 alias lime='subl'
 
 ## Deno Related
-alias deno-update='deno --version && curl -fsSL https://deno.land/x/install/install.sh | sh'
 alias deno-fileserver='deno run --allow-net --allow-read https://deno.land/std/http/file_server.ts'
 
 ## Tailwind CSS
@@ -132,6 +131,7 @@ alias sbt8='sbt -java-home /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk
 ##############
 
 ## Elixir Related
+# Adds documentation for Erlang methods in Elixir.
 export KERL_BUILD_DOCS="yes" # try with `h :calendar.gregorian_seconds_to_datetime`
 
 ## Rust Related
