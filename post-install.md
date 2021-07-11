@@ -16,6 +16,7 @@
  - ncdu
  - ssh-copy-id
  - tree
+ - bat
  
 ## Mac Applications 
 
