@@ -6,10 +6,12 @@ export ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="robbyrussell"
 ZSH_THEME=random
 ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "kolo" )
-## Plugin
-plugins=(git)
-## Load Oh My Zsh
-source $ZSH/oh-my-zsh.sh
+if [ - e $HOME/.oh-my-zsh ]; then 
+  ## Plugin
+  plugins=(git)
+  ## Load Oh My Zsh
+  source $ZSH/oh-my-zsh.sh
+fi
 
 ### Aliases
 source ~/.aliases
@@ -18,7 +20,7 @@ source ~/.aliases
 source ~/.secret
 
 ### zsh-syntax-highlighting
-if [-e /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh]; then 
+if [ -e /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then 
   # Homebrew Installed
   source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
