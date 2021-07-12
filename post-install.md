@@ -61,6 +61,7 @@
 1. Ruby and RbEnv
  - `brew install ruby-build --HEAD`
  - `brew install rbenv` 
+ - `brew install rbenv-use`
 2. [NodeJs]() (M1 Optimized in latest version)
 2. [Elm Lang](https://elm-lang.org)
 3. ~~Java JDK~~ OpenJDK via homebrew
