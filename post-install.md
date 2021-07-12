@@ -70,6 +70,7 @@
 6. [PlantUML](http://plantuml.com)
 7. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11)
 8. [JVisualVM](https://visualvm.github.io/download.html)
+9. [Exercism](https://exercism.io/my/settings) `brew install exercism` & `exercism configure`
 
 ## Java 
 1. For Apple M1 use [Azul](https://www.azul.com/downloads/?version=java-11-lts&os=macos&architecture=arm-64-bit&package=jdk)
