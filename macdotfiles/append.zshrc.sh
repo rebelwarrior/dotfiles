@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="robbyrussell"
 ZSH_THEME=random
 ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "kolo" )
-if [ - e $HOME/.oh-my-zsh ]; then 
+if [ -e $HOME/.oh-my-zsh ]; then 
   ## Plugin
   plugins=(git)
   ## Load Oh My Zsh
