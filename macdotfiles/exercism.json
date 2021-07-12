@@ -1,3 +1,4 @@
+// in .config/exercism/user.json. This file is old generate a new one with `exercism configure`.
 {
 	"apiKey": "/Users/davidacevedo/.secret",
 	"dir": "/Users/davidacevedo/Code/exercism",
