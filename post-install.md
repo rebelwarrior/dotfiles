@@ -70,7 +70,7 @@
   - Check output of `pyenv init --path` is in `.zprofile`
   - Install Pip packages `pip3 install youtube-dl` 
 5. [Julia Lang](https://julialang.org/downloads/)
-7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/)
+7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/) or [Plan R](https://cran.microsoft.com)
 8. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or [VirtualBox](https://www.virtualbox.org/)
 9. [PlantUML](http://plantuml.com)
 10. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11)
@@ -85,8 +85,8 @@
 
 1. [Affinity Designer](https://affinity.serif.com/en-gb/designer/) (M1 Optimized)
 2. [Affinity Photo](https://affinity.serif.com/en-gb/photo/) (M1 Optimized)
-3. [Magnet](https://magnet.crowdcafe.com/)
-4. [Spark](https://sparkmailapp.com/)
+3. [Magnet](https://magnet.crowdcafe.com/) (I think it's M1 Optimized)
+4. [Spark](https://sparkmailapp.com/) (M1 Optimized)
 6. iWork Suite (Pages, Numbers, Keynote) 
 5. ~~[TouchDraw](https://apps.apple.com/us/app/touchdraw/id548887176?mt=12) (works a bit like Visio)~~
 7. [WireGuard](https://apps.apple.com/us/app/wireguard/id1451685025?mt=12)
