@@ -70,7 +70,7 @@
   - Check output of `pyenv init --path` is in `.zprofile`
   - Install Pip packages `pip3 install youtube-dl` 
 5. [Julia Lang](https://julialang.org/downloads/)
-7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/) or [Plan R](https://cran.microsoft.com)
+7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/) or [Plain R](https://cran.microsoft.com)
 8. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or [VirtualBox](https://www.virtualbox.org/)
 9. [PlantUML](http://plantuml.com)
 10. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11)
