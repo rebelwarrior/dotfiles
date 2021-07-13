@@ -125,6 +125,7 @@
 7. [Microsoft Edge](https://www.microsoft.com/en-us/edge/) 
 8. [Lossless-cut](https://github.com/mifi/lossless-cut)
 9. [Pure Ref](https://www.pureref.com/)
+10. [Element (Riot IM)](https://element.io/get-started)
 
 ## Drivers
 1. [Marble Mouse Logictech](https://www.logitech.com/en-us/product/trackman-marble-business) Driver ([Logitech Control Center](https://support.logi.com/hc/en-us/articles/360025297833))
