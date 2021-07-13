@@ -69,7 +69,7 @@
   - `brew install pyenv-virtualenv`
   - Check output of `pyenv init --path` is in `.zprofile`
   - Install Pip packages `pip3 install youtube-dl` 
-6. [Julia Lang](https://julialang.org/downloads/)
+5. [Julia Lang](https://julialang.org/downloads/)
 7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/)
 8. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or [VirtualBox](https://www.virtualbox.org/)
 9. [PlantUML](http://plantuml.com)
@@ -117,7 +117,7 @@
 (I hate all the others so I'll only install them if I need them, then quickly uninstall them.)
 
 ## Considering 
-2. [Paw API](https://paw.cloud/) vs. [Postman](https://www.postman.com/)
+1. [Paw API](https://paw.cloud/) vs. [Postman](https://www.postman.com/)
 3. [Discord](https://discordapp.com/download)
 4. ~~[Phiewer](https://phiewer.com)~~
 5. [DBeaver](https://dbeaver.io/) or ~~[Navicat](https://customer.navicat.com/)~~ (expensive)
