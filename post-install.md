@@ -63,15 +63,19 @@
  - `brew install rbenv` 
  - `brew install rbenv-use`
 2. [NodeJs]() (M1 Optimized in latest version)
-2. [Elm Lang](https://elm-lang.org)
-3. ~~Java JDK~~ OpenJDK via homebrew
-3. [Julia Lang](https://julialang.org/downloads/)
-4. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/)
-5. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or [VirtualBox](https://www.virtualbox.org/)
-6. [PlantUML](http://plantuml.com)
-7. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11)
-8. [JVisualVM](https://visualvm.github.io/download.html)
-9. [Exercism](https://exercism.io/my/settings) `brew install exercism` & `exercism configure`
+3. [Elm Lang](https://elm-lang.org)
+4. Python and Pyenv
+  - `brew install pyenv`
+  - `brew install pyenv-virtualenv`
+  - Check output of `pyenv init --path` is in `.zprofile`
+  - Install Pip packages `pip3 install youtube-dl` 
+6. [Julia Lang](https://julialang.org/downloads/)
+7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/)
+8. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or [VirtualBox](https://www.virtualbox.org/)
+9. [PlantUML](http://plantuml.com)
+10. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11)
+11. [JVisualVM](https://visualvm.github.io/download.html)
+12. [Exercism](https://exercism.io/my/settings) `brew install exercism` & `exercism configure`
 
 ## Java 
 1. For Apple M1 use [Azul](https://www.azul.com/downloads/?version=java-11-lts&os=macos&architecture=arm-64-bit&package=jdk)
