@@ -85,7 +85,7 @@
 
 1. [Affinity Designer](https://affinity.serif.com/en-gb/designer/) (M1 Optimized)
 2. [Affinity Photo](https://affinity.serif.com/en-gb/photo/) (M1 Optimized)
-3. [Magnet](https://magnet.crowdcafe.com/) (I think it's M1 Optimized)
+3. [Magnet](https://magnet.crowdcafe.com/) (I think it's M1 Optimized, –yes it's a universal binary)
 4. [Spark](https://sparkmailapp.com/) (M1 Optimized)
 6. iWork Suite (Pages, Numbers, Keynote) 
 5. ~~[TouchDraw](https://apps.apple.com/us/app/touchdraw/id548887176?mt=12) (works a bit like Visio)~~
@@ -96,7 +96,7 @@
 
 1. [Intel Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget-20)
 2. [Xee^3](https://theunarchiver.com/xee)
-3. [Scrivner3](https://www.literatureandlatte.com/scrivener/overview)
+3. [Scrivner3](https://www.literatureandlatte.com/scrivener/overview) (M1 Optimized)
 4. [Descript](https://www.descript.com)
 5. [Aeon Timeline 2](https://www.aeontimeline.com)
 7. [Microsoft Default Mail Setter App](https://support.microsoft.com/en-us/help/4483875/outlook-for-mac-support-utilities)
@@ -112,7 +112,7 @@
 
 1. [Skype](https://www.skype.com/en/get-skype/)
 2. [Zoom US](https://zoom.us) (M1 Optimized)
-3. [Blue Jeans](https://www.bluejeans.com/downloads)
+3. [~~Blue Jeans~~](https://www.bluejeans.com/downloads)
 
 (I hate all the others so I'll only install them if I need them, then quickly uninstall them.)
 
