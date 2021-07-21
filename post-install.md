@@ -73,7 +73,7 @@
 7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/) or [Plain R](https://cran.microsoft.com)
 8. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or [VirtualBox](https://www.virtualbox.org/)
 9. [PlantUML](http://plantuml.com)
-10. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11)
+10. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11) (Download .zip and place `/usr/local/neo4j`)
 11. [JVisualVM](https://visualvm.github.io/download.html)
 12. [Exercism](https://exercism.io/my/settings) `brew install exercism` & `exercism configure`
 
