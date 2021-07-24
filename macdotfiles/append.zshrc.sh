@@ -1,5 +1,4 @@
 ### Oh My Zsh
-
 ## Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 ## Theme
@@ -9,7 +8,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "kolo" )
 if [ -e $HOME/.oh-my-zsh ]; then 
   ## Plugin
   plugins=(git)
-  ## Load Oh My Zsh
+  ## Load "Oh My Zsh"
   source $ZSH/oh-my-zsh.sh
 fi
 
@@ -25,15 +24,15 @@ if [ -e /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
   source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 if [ -e $HOME/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then 
-  # Git cloned into .oh-my-zsh non-plugon place.
+  # Git cloned into .oh-my-zsh non-plugin place.
   source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi 
-
 
 ### rbenv (RUBY)
 if (type rbenv >/dev/null 2>&1 || exit 1 ); then 
   eval "$(rbenv init -)"; 
-  if (type brew >/dev/null 2>&1 || exit 1 ); then 
+  if (type brew >/dev/null 2>&1 || exit 1 ); then
+    # This prevents an OpenSSL being downloaded with each ruby version.
     export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
   fi
 fi
@@ -47,10 +46,16 @@ if (type pyenv-virtualenv-init >/dev/null 2>&1 || exit 1 ); then
   export WORKON_HOME=$HOME/.virtualenvs
 fi
 
-## Deno
-if test -d "/Users/davidacevedo/.deno"; then 
-  export DENO_INSTALL="/Users/davidacevedo/.deno"
+### Deno
+if test -d "$HOME/.deno"; then 
+  export DENO_INSTALL="$HOME/.deno"
   export PATH="$DENO_INSTALL/bin:$PATH"
+fi
+
+### Flutter 
+if test -d "$HOME/Developer/flutter"; then 
+  export PATH="$PATH:$HOME/Developer/flutter/bin"
+  # export JAVA_HOME="/Applications/Android\ Studio\ Preview.app/Contents/jre/Contents/Home"
 fi
 
 ### Added for RVM
@@ -61,4 +66,3 @@ fi
 
 ## Blueutil turn off power to Bluetooth
 # blueutil --power 0
-
