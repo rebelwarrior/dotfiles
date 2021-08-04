@@ -14,16 +14,16 @@ alias tree2="tree -L 2 ."
 ## Mac Only ##
 alias eject-usb='diskutil unmount'
 alias java_home='/usr/libexec/java_home'
-alias macjs='/System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc'
+# alias macjs='/System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc'
 alias delete='trash'         #see function below
 alias hide-icons='hideIcons' #see function below
 alias show-icons='showIcons' #see function below
-alias visualvm='jvisualvm'
 alias list-cpu='sysctl -n machdep.cpu.brand_string' # lists CPU name
 # Mac has extened attributes and permisions that aren't part of Linux spec
 # `ls - l` shows `+` for extended permisions and `@` for extened attr. 
 # extended permision are seen by adding `-e` to `ls`. 
 alias extended_attributes='xattr -l' # to expand the `@` sign in `ls -l` 
+alias visualvm='jvisualvm'   #Java Visual VM
 
 ## Brew Related
 alias sha1='openssl sha1'
@@ -68,6 +68,9 @@ alias rails6='rails new --skip-webpack-install --skip-test'
 # For Jekyll
 alias jekyll-dev='be jekyll serve --config _config.dev.yml'
 
+## Java Related
+export JRE_HOME="/opt/homebrew/opt/openjdk@11"
+
 ## JavaScript / Node Related 
 alias safer-npm='npm config set ignore-scripts true'
 
@@ -75,7 +78,7 @@ alias safer-npm='npm config set ignore-scripts true'
 alias pye='pyenv'
 alias django-admin='django-admin.py'
 alias django-manage='python3 manage.py'
-alias pcat='pygmentize -f terminal256 -O style=monokai -g'
+# alias pcat='pygmentize -f terminal256 -O style=monokai -g'
 
 ## Rust Related 
 alias cargo-wasm='cargo build --release --target wasm32-unknown-unknown'
@@ -84,8 +87,17 @@ alias cargo-doc='cargo doc --open --package'
 ## Elm Related 
 alias elm-repl='elm repl'
 
+## Elixir & Phoenix Related
+function phoenix() {
+  if pg_isready | grep -q 'accepting connections'; then 
+    mix phx.$1
+  else 
+    echo "You must start PostgresQL or use 'mix phx.server'."
+  fi
+}
+
 ## Kotlin Related 
-alias kotlin-repl='kotlinc-jvm'
+# alias kotlin-repl='kotlinc-jvm'
 
 ## Git Related
 alias git-hotspot='git log --format=format: --name-only | egrep -v "^$" | sort | uniq -c | sort -r'
@@ -138,6 +150,7 @@ export KERL_BUILD_DOCS="yes" # try with `h :calendar.gregorian_seconds_to_dateti
 if [ -e $HOME/.cargo ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
   source $HOME/.cargo/env
+  # Add Alias for pruning .cargo directory without delete bins.
 fi 
 
 ## GO Lang
@@ -146,10 +159,6 @@ fi
 ## Sublime Text
 alias lime='subl'
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-
-## Opera Driver Location (similar to chrome driver) get from GitHub
-# https://github.com/operasoftware/operachromiumdriver
-export OPERA_DRIVER_HOME="/usr/local/operadriver_mac64"
 
 
 #####################
@@ -179,6 +188,9 @@ alias cypher-shell="/usr/local/neo4j/bin/cypher-shell"
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias safari='open -a Safari'
 alias opera='/Applications/Opera.app/Contents/MacOS/Opera'
+
+## Opera Driver Location (similar to chrome driver) get from GitHub
+export OPERA_DRIVER_HOME="/usr/local/operadriver_mac64"
 
 
 ##################
@@ -225,6 +237,7 @@ function dashq(){
 
 ## Vim Packages
 function setup_vim(){
+  # Needs Dart plugin and better documentation!
   # Nerd tree 
   git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
   # echo "autocmd vimenter * NERDTree" >> .vimrc
@@ -261,6 +274,7 @@ fi
 ## Java Home for Java Cryptographic Extensions
 # /usr/libexec/java_home
 # jre/lib/security
+# /Library/Java/JavaVirtualMachines
 
 ####################
 ### Experimental ###
@@ -344,6 +358,8 @@ function gemfile() {
 
 ## Tomcat
 function tomcat() {
+  # export CATALINA_OPTS=""
+  export JRE_HOME="/opt/homebrew/opt/openjdk@11"
   echo("catalina run")
 }
 
@@ -361,7 +377,9 @@ function time-machine-exclusions() {
   sudo tmutil addexclusion -p ~/.rbenv/versions;
   sudo tmutil addexclusion -p ~/.pyenv/versions;
   sudo tmutil addexclusion -p ~/.rustup/toolchains;
-  sudo tmutil addexclusion -p ~/.deno/bin;
+  sudo tmutil addexclusion -p /opt/homebrew; # Apple M1 Location
+  sudo tmutil addexclusion -p ~/Library/Application\ Support/CrossOver/Bottles/Dynamic\ Painter;
+  sudo tmutil addexclusion -p ~/Library/Containers/com.docker.docker/Data;
 }
 
 ## BlueTooth 
