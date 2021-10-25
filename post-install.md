@@ -77,10 +77,6 @@
 11. [JVisualVM](https://visualvm.github.io/download.html)
 12. [Exercism](https://exercism.io/my/settings) `brew install exercism` & `exercism configure`
 
-## Java 
-1. For Apple M1 use [Azul](https://www.azul.com/downloads/?version=java-11-lts&os=macos&architecture=arm-64-bit&package=jdk)
-2. For x86_64 you can use homebrew. The latest version is also M1 compatible but none of the old openjdk versions work and the new one is too new for JRuby.
-
 ## Mac App Store Apps
 
 1. [Affinity Designer](https://affinity.serif.com/en-gb/designer/) (M1 Optimized)
