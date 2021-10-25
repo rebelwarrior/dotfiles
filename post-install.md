@@ -76,6 +76,7 @@
 10. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11) (Download .zip and place `/usr/local/neo4j`)
 11. [JVisualVM](https://visualvm.github.io/download.html)
 12. [Exercism](https://exercism.io/my/settings) `brew install exercism` & `exercism configure`
+13. [Crystal-lang](https://github.com/crystal-lang/crystal/releases) now has a package installer. (Installs in `/opt`)
 
 ## Mac App Store Apps
 
