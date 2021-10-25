@@ -134,3 +134,12 @@
 
 ## M1 compatible
 Check this [website](https://isapplesiliconready.com/for/m1)
+
+---
+
+## Post Install Textmate Script 
+```bash
+mkdir -p ~/Library/Application\ Support/TextMate/Bundles
+cd ~/Library/Application\ Support/TextMate/Bundles
+git clone https://github.com/crystal-lang-tools/Crystal.tmbundle.git
+```
