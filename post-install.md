@@ -3,8 +3,6 @@
 ## Command Line Install
 
 1. [Homebrew](https://brew.sh)
-2. [Git](https://en.wikipedia.org/wiki/Git)
- - `brew install git`
 3. [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh) `git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh`
 4. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) 
  - `brew install zsh-syntax-highlighting`
