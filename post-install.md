@@ -56,7 +56,7 @@
 
 ## Programming Languages Apps
 
-1. Ruby and RbEnv
+1. Ruby and RbEnv and [RbEnv Use](https://github.com/rkh/rbenv-use)
  - `brew install ruby-build --HEAD`
  - `brew install rbenv` 
  - `brew install rbenv-use`
