@@ -60,6 +60,7 @@
  - `brew install ruby-build --HEAD`
  - `brew install rbenv` 
  - `brew install rbenv-use`
+    - requires extra steps now
 2. [NodeJs]() (M1 Optimized in latest version)
 3. [Elm Lang](https://elm-lang.org)
 4. Python and Pyenv
@@ -67,14 +68,15 @@
   - `brew install pyenv-virtualenv`
   - Check output of `pyenv init --path` is in `.zprofile`
   - Install Pip packages `pip3 install youtube-dl` 
-5. [Julia Lang](https://julialang.org/downloads/)
-7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/) or [Plain R](https://cran.microsoft.com)
-8. [Docker Desktop App](https://www.docker.com/products/docker-desktop) (if Desktop) or [VirtualBox](https://www.virtualbox.org/)
+5. [Julia Lang](https://julialang.org/downloads/) for Data Science
+7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/) or [Plain R](https://cran.microsoft.com) for Data Science
+8. [Docker Desktop App](https://www.docker.com/products/docker-desktop) or [VirtualBox](https://www.virtualbox.org/)
 9. [PlantUML](http://plantuml.com)
 10. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11) (Download .zip and place `/usr/local/neo4j`)
 11. [JVisualVM](https://visualvm.github.io/download.html)
 12. [Exercism](https://exercism.io/my/settings) `brew install exercism` & `exercism configure`
 13. [Crystal-lang](https://github.com/crystal-lang/crystal/releases) now has a package installer. (Installs in `/opt`)
+14. [Rust-lang](https://www.rust-lang.org/tools/install)
 
 ## Mac App Store Apps
 
