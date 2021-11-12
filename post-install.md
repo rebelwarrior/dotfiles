@@ -82,7 +82,7 @@
 
 1. [Affinity Designer](https://affinity.serif.com/en-gb/designer/) (M1 Optimized)
 2. [Affinity Photo](https://affinity.serif.com/en-gb/photo/) (M1 Optimized)
-3. [Magnet](https://magnet.crowdcafe.com/) (I think it's M1 Optimized, –yes it's a universal binary)
+3. [Magnet](https://magnet.crowdcafe.com/) (M1 Optimized, it's a universal binary)
 4. [Spark](https://sparkmailapp.com/) (M1 Optimized)
 6. iWork Suite (Pages, Numbers, Keynote) 
 5. ~~[TouchDraw](https://apps.apple.com/us/app/touchdraw/id548887176?mt=12) (works a bit like Visio)~~
@@ -102,8 +102,7 @@
 10. Streaming:[OBS](https://obsproject.com/)
 11. [qBitTorrent](https://www.qbittorrent.org/)
 12. [MalwarebytesMac](https://www.malwarebytes.com/mac/)
-13. [VLC Media Player](https://www.videolan.org/vlc/) (M1 Optimized)
-14. [Macs Fan Control](https://crystalidea.com/macs-fan-control/download)
+13. [Macs Fan Control](https://crystalidea.com/macs-fan-control/download)
 
 ## Video Conference
 
@@ -123,6 +122,7 @@
 8. [Lossless-cut](https://github.com/mifi/lossless-cut)
 9. [Pure Ref](https://www.pureref.com/)
 10. [Element (Riot IM)](https://element.io/get-started)
+11. [VLC Media Player](https://www.videolan.org/vlc/) (M1 Optimized)
 
 ## Drivers
 1. [Marble Mouse Logictech](https://www.logitech.com/en-us/product/trackman-marble-business) Driver ([Logitech Control Center](https://support.logi.com/hc/en-us/articles/360025297833))
