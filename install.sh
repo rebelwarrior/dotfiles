@@ -1,4 +1,4 @@
-if [ $(uname) = "Darwin" ]; then 
+if [ $(uname) = "Darwin" ]; then
   touch $HOME/.secret
   touch $HOME/.bash_profile
   cat macdotfiles/append.bash_profile.sh >> $HOME/.bash_profile
@@ -6,6 +6,8 @@ if [ $(uname) = "Darwin" ]; then
   cat macdotfiles/append.zshrc.sh >> $HOME/.zshrc
   touch $HOME/.aliases
   cat macdotfiles/aliases.sh >> $HOME/.aliases
+  touch $HOME/.functions
+  cat macdotfiles/functions.sh >> $HOME/.functions
   touch $HOME/.vimrc
   cat macdotfiles/vimrc.vim >> $HOME/.vimrc
   touch $HOME/.gitconfig
