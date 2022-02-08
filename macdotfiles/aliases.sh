@@ -20,9 +20,9 @@ alias hide-icons='hideIcons' #see function below
 alias show-icons='showIcons' #see function below
 alias list-cpu='sysctl -n machdep.cpu.brand_string' # lists CPU name
 # Mac has extened attributes and permisions that aren't part of Linux spec
-# `ls - l` shows `+` for extended permisions and `@` for extened attr. 
-# extended permision are seen by adding `-e` to `ls`. 
-alias extended_attributes='xattr -l' # to expand the `@` sign in `ls -l` 
+# `ls - l` shows `+` for extended permisions and `@` for extened attr.
+# extended permision are seen by adding `-e` to `ls`.
+alias extended_attributes='xattr -l' # to expand the `@` sign in `ls -l`
 alias visualvm='jvisualvm'   #Java Visual VM
 
 ## Brew Related
@@ -54,7 +54,7 @@ alias rubocop-app='rubocop -Da app/'
 # alias sgp='shotgun -s puma -p 3000 config.ru'
 # For Rails
 alias rspec-init='bin/rails generate rspec:install'
-# For RBENV 
+# For RBENV
 alias rbe='rbenv'
 # For Pry
 alias spry='pry --simple-prompt'
@@ -67,11 +67,14 @@ alias rake-tasks='rake -T'
 alias rails6='rails new --skip-webpack-install --skip-test'
 # For Jekyll
 alias jekyll-dev='be jekyll serve --config _config.dev.yml'
+# Gem Install version
+# `gem install -v '~> 1.0'`
 
 ## Java Related
 export JRE_HOME="/opt/homebrew/opt/openjdk@11"
+alias java-arch="java -Xinternalversion"
 
-## JavaScript / Node Related 
+## JavaScript / Node Related
 alias safer-npm='npm config set ignore-scripts true'
 
 ## Python Related
@@ -80,23 +83,32 @@ alias django-admin='django-admin.py'
 alias django-manage='python3 manage.py'
 # alias pcat='pygmentize -f terminal256 -O style=monokai -g'
 
-## Rust Related 
+## Rust Related
 alias cargo-wasm='cargo build --release --target wasm32-unknown-unknown'
 alias cargo-doc='cargo doc --open --package'
 
-## Elm Related 
+## Elm Related
 alias elm-repl='elm repl'
+alias elm-pipeline='elm install NoRedInk/elm-json-decode-pipeline'
 
 ## Elixir & Phoenix Related
 function phoenix() {
-  if pg_isready | grep -q 'accepting connections'; then 
+  if pg_isready | grep -q 'accepting connections'; then
     mix phx.$1
-  else 
+  else
     echo "You must start PostgresQL or use 'mix phx.server'."
   fi
 }
 
-## Kotlin Related 
+function ecto() {
+  if pg_isready | grep -q 'accepting connections'; then
+    mix ecto.$1 $2
+  else
+    echo "You must start PostgresQL or use 'mix ecto.something'."
+  fi
+}
+
+## Kotlin Related
 # alias kotlin-repl='kotlinc-jvm'
 
 ## Git Related
@@ -118,6 +130,9 @@ alias deno-fileserver='deno run --allow-net --allow-read https://deno.land/std/h
 ## Tailwind CSS
 alias tailwind-build-css='npx tailwindcss-cli@latest build -o tailwind.css'
 
+## Dart SDK
+alias dart-pub="${HOME}/Developer/dart-sdk/bin/pub"
+
 ## ElasticSearch
 # alias els='elasticsearch'
 # alias els_nodes="curl 'localhost:9200/_cat/nodes?v' "
@@ -135,7 +150,11 @@ alias tailwind-build-css='npx tailwindcss-cli@latest build -o tailwind.css'
 # }
 
 ## Scala
+# SBT seems to only work with Java 8
 alias sbt8='sbt -java-home /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home'
+
+## Kubernetes
+alias kubectl='minikube kubectl --'
 
 
 ##############
@@ -151,7 +170,7 @@ if [ -e $HOME/.cargo ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
   source $HOME/.cargo/env
   # Add Alias for pruning .cargo directory without delete bins.
-fi 
+fi
 
 ## GO Lang
 # if [ -e /usr/local/opt/go ]; then; export PATH=$PATH:/usr/local/opt/go/libexec/bin; fi
@@ -168,11 +187,11 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 ## For PostgresQL App
 if [ -e /Applications/Postgres.app ]; then
   alias psql="'/Applications/Postgres.app/Contents/Versions/latest/bin'/psql -p5432"
-  export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin 
+  export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
   # needed for building gems
 fi
 
-## Neo4j (Neo4j_Home to be set to where you put the tar export.) 
+## Neo4j (Neo4j_Home to be set to where you put the tar export.)
 export NEO4J_HOME="/usr/local/neo4j"
 export NEO4J_CONF="/usr/local/neo4j/conf"
 alias neo4j="/usr/local/neo4j/bin/neo4j"
@@ -210,7 +229,7 @@ function brew-dependencies(){
     brew deps $cask | awk '{printf(" %s ", $0)}'; echo "";
   done
 }
- 
+
 # function brew-dependencies2(){
 #   brew list | while read cask; do
 #     brew deps --tree $cask;
@@ -221,29 +240,6 @@ function brew-dependencies(){
 function dashq(){
   open dash://$1:$2
 }
-
-## Atom Packages
-# function setup_atom(){
-#   apm install language-mjml;
-#   apm install language-elm;
-#   apm install language-elixir;
-#   apm install elm-format;
-#   #elm beautify
-#   apm install file-icons;
-#   apm install mini-map;
-#   apm install minimap-highlight-selected;
-#   apm install dart 
-# }
-
-## Vim Packages
-function setup_vim(){
-  # Needs Dart plugin and better documentation!
-  # Nerd tree 
-  git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
-  # echo "autocmd vimenter * NERDTree" >> .vimrc
-  git clone git://github.com/jiangmiao/auto-pairs.git ~/.vim/bundle/auto-pairs
-}
-
 
 ################
 ### Mac Only ###
@@ -265,23 +261,26 @@ function showIcons(){
 ## Nescesary Mac Defaults
 
 ## Reset RVM is not a function
-if [ -e ~/.rvm/scripts/rvm ]; then
-  function rvm-reset(){
-    source ~/.rvm/scripts/rvm; type rvm | head -n 1
-  }
-fi
+# if [ -e ~/.rvm/scripts/rvm ]; then
+#   function rvm-reset(){
+#     source ~/.rvm/scripts/rvm; type rvm | head -n 1
+#   }
+# fi
 
 ## Java Home for Java Cryptographic Extensions
 # /usr/libexec/java_home
 # jre/lib/security
 # /Library/Java/JavaVirtualMachines
 
+## Codeweavers' CrossOver
+alias cleanup-crossoover="rm ${HOME}/Library/Application\ Support/CrossOver/installers/*"
+
 ####################
 ### Experimental ###
 ####################
 
 ## Setting up alias for Julia
-if [ -e ~/.julia ]; then 
+if [ -e ~/.julia ]; then
   alias julia="/Applications/\"$(ls /Applications | grep 'Julia' | head -1)\"/Contents/Resources/julia/bin/julia";
 fi
 
@@ -312,7 +311,7 @@ if [ -e ~/.jars/plantuml.jar ]; then
   }
 fi
 
-## BFG 
+## BFG
 if test -d $HOME/.jars && (ls $HOME/.jars/ | grep -q 'bfg'); then
   function bigfg(){
     # Install the bfg jar in a a folder called .jars on your home.
@@ -326,7 +325,7 @@ function minify(){
   # yuicompressor --disable-optimizations $1 -o $2
   if (command -v uglifyjs >/dev/null 2>&1 || exit 1 ); then
     uglifyjs $1 --compress 'pure_funcs="F2,F3,F4,F5,F6,F7,F8,F9,A2,A3,A4,A5,A6,A7,A8,A9",pure_getters,keep_fargs=false,unsafe_comps,unsafe' | uglifyjs --mangle --output $2
-  else 
+  else
     echo "uglify-js is a npm package that should be installed globally 'npm install uglify-js --global'"
   fi
 }
@@ -360,14 +359,19 @@ function gemfile() {
 function tomcat() {
   # export CATALINA_OPTS=""
   export JRE_HOME="/opt/homebrew/opt/openjdk@11"
-  echo("catalina run")
+  echo('catalina run')
 }
+
+
+########################
+### Set Up Functions ###
+########################
 
 ## Initialize Docker
 function docker-init() {
-  touch .dockerignore 
-  touch Dockerfile 
-  echo "# Git\n.git\n.gitignore\n\n# Logs\nlog/*\n\n# Temp files\ntmp/*\n\n# Editor temp files\n*.swp\n*.swo\n" >> .dockerignore 
+  touch .dockerignore
+  touch Dockerfile
+  echo "# Git\n.git\n.gitignore\n\n# Logs\nlog/*\n\n# Temp files\ntmp/*\n\n# Editor temp files\n*.swp\n*.swo\n" >> .dockerignore
 }
 
 ## Time Machine Exclusions
@@ -377,10 +381,13 @@ function time-machine-exclusions() {
   sudo tmutil addexclusion -p ~/.rbenv/versions;
   sudo tmutil addexclusion -p ~/.pyenv/versions;
   sudo tmutil addexclusion -p ~/.rustup/toolchains;
-  sudo tmutil addexclusion -p /opt/homebrew; # Apple M1 Location
+  sudo tmutil addexclusion -p /opt/homebrew; # Apple M1 Location Homebrew
   sudo tmutil addexclusion -p ~/Library/Application\ Support/CrossOver/Bottles/Dynamic\ Painter;
-  sudo tmutil addexclusion -p ~/Library/Containers/com.docker.docker/Data;
+  sudo tmutil addexclusion -p ~/Library/Application\ Support/CrossOver/Bottles/Steam; # CX Steam
+  sudo tmutil addexclusion -p ~/Library/Containers/com.docker.docker/Data; # Docker
+  sudo tmutil addexclusion -p ~/Library/Application\ Support/Steam/steamapps/common; # Mac Steam
 }
 
-## BlueTooth 
-alias list-bluetooth="system_profiler SPBluetoothDataType"
+function install-functions() {
+  source ~/.functions
+}
