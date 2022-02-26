@@ -5,8 +5,6 @@ alias find-process="ps aux | grep"
 alias z='zsh --login'
 alias htop='sudo htop'
 alias tmux-named='tmux new -s'
-alias coffee6='coffee --nodejs --harmony'
-
 
 ## Ruby Related
 alias be='bundle exec'
