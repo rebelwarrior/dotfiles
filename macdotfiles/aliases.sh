@@ -14,6 +14,7 @@ alias tree2="tree -L 2 ."
 ## Mac Only ##
 alias eject-usb='diskutil unmount'
 alias java_home='/usr/libexec/java_home'
+alias dropbox='cd ~/Library/CloudStorage/Dropbox'
 # alias macjs='/System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc'
 alias delete='trash'         #see function below
 alias hide-icons='hideIcons' #see function below
@@ -90,6 +91,9 @@ alias cargo-doc='cargo doc --open --package'
 ## Elm Related
 alias elm-repl='elm repl'
 alias elm-pipeline='elm install NoRedInk/elm-json-decode-pipeline'
+
+## Haskell Related
+alias hask='ghci'
 
 ## Elixir & Phoenix Related
 function phoenix() {

@@ -59,6 +59,14 @@ if test -d "$HOME/Developer/flutter"; then
   # export JAVA_HOME="/Applications/Android\ Studio\ Preview.app/Contents/jre/Contents/Home"
 fi
 
+## Haskell 
+if test -d "$HOME/.ghcup"; then 
+  source "$HOME/.ghcup/env"
+fi
+
+## Node
+# export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+
 ### Added for RVM
 # if [ -e $HOME/.rvm/scripts/rvm ]; then
 #   export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
