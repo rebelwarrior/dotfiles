@@ -24,3 +24,6 @@
 
 ## Other
 1. Discord Canary 
+2. Spark (Mail Client)
+
+## Expensive but good. 
