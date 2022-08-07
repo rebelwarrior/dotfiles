@@ -19,6 +19,7 @@
 1. iTerm2
 2. VLC Media Player
 3. App Cleaner 
+4. OnlyOffice
 
 
 ## Other
