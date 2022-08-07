@@ -15,6 +15,10 @@
 2. cask
   1. flycut `brew install flycut --cask`
 
+## Browsers
+1. Chrome
+2. Firefox
+
 ## Recommened
 1. [iTerm2](https://iterm2.com/downloads/stable/iTerm2-3_4_16.zip)
 2. [VLC Media Player](https://get.videolan.org/vlc/3.0.17.3/macosx/vlc-3.0.17.3-arm64.dmg)
