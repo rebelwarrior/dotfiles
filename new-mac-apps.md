@@ -20,6 +20,7 @@
 2. [VLC Media Player](https://get.videolan.org/vlc/3.0.17.3/macosx/vlc-3.0.17.3-arm64.dmg)
 3. [App Cleaner](https://freemacsoft.net/appcleaner/) 
 4. [OnlyOffice](https://www.onlyoffice.com/desktop.aspx)
+5. [Zoom](https://zoom.us/download#client_4meeting)
 
 
 ## Other
