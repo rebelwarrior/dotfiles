@@ -6,6 +6,9 @@
 ## App Store
 1. [Magnet](https://apps.apple.com/us/app/magnet/id441258766?mt=12)
 2. [Prime Video](https://apps.apple.com/us/app/amazon-prime-video/id545519333)
+3. [Numbers](https://apps.apple.com/us/app/numbers/id409203825?mt=12)
+4. [Pages](https://apps.apple.com/us/app/pages/id409201541?mt=12)
+5. [Keynote](https://apps.apple.com/us/app/keynote/id409183694?mt=12)
 
 ## App Store iPad/iPhone Apps
 1. [Easy Calendar](https://apps.apple.com/us/app/easy-calendar/id421724209)
