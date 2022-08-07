@@ -4,26 +4,26 @@
 
 
 ## App Store
-1. Magnet
-2. Prime Video
+1. [Magnet](https://apps.apple.com/us/app/magnet/id441258766?mt=12)
+2. [Prime Video](https://apps.apple.com/us/app/amazon-prime-video/id545519333)
 
 ## App Store iPad/iPhone Apps
-1. Prime Video?
+1. [Easy Calendar](https://apps.apple.com/us/app/easy-calendar/id421724209)
 
 ## Command Line
-1. homebrew
+1. [homebrew](https://brew.sh/)
 2. cask
-  1. flycut
+  1. flycut `brew install flycut --cask`
 
 ## Recommened
-1. iTerm2
-2. VLC Media Player
-3. App Cleaner 
-4. OnlyOffice
+1. [iTerm2](https://iterm2.com/downloads/stable/iTerm2-3_4_16.zip)
+2. [VLC Media Player](https://get.videolan.org/vlc/3.0.17.3/macosx/vlc-3.0.17.3-arm64.dmg)
+3. [App Cleaner](https://freemacsoft.net/appcleaner/) 
+4. [OnlyOffice](https://www.onlyoffice.com/desktop.aspx)
 
 
 ## Other
 1. Discord Canary 
-2. Spark (Mail Client)
+2. [Spark (Mail Client)](https://sparkmailapp.com/)
 
 ## Expensive but good. 
