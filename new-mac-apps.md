@@ -24,7 +24,7 @@
 2. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 ## Recommened
-1. [iTerm2](https://iterm2.com/downloads/stable/iTerm2-3_4_16.zip)
+1. [iTerm2?](https://iterm2.com/downloads/stable/iTerm2-3_4_16.zip)
 2. [VLC Media Player](https://get.videolan.org/vlc/3.0.17.3/macosx/vlc-3.0.17.3-arm64.dmg)
 3. [App Cleaner](https://freemacsoft.net/appcleaner/) 
 4. [OnlyOffice](https://www.onlyoffice.com/desktop.aspx)
@@ -33,7 +33,7 @@
 
 ## Other
 1. Discord Canary 
-2. [Spark (Mail Client)](https://sparkmailapp.com/)
+2. [Spark (Mail Client)?](https://sparkmailapp.com/)
 
 ## Expensive but good. 
 1. Affinity Photo
@@ -43,3 +43,4 @@
 
 ## Parental controls
 1. [Mac Parental Controls](https://support.apple.com/guide/mac-help/set-up-content-and-privacy-restrictions-mchl8490d51e/mac)
+2. [Family Sharing](https://support.apple.com/en-us/HT201088)
