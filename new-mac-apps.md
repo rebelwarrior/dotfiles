@@ -16,12 +16,11 @@
 
 ## Command Line
 1. [homebrew?](https://brew.sh/)
-2. cask
-  1. flycut `brew install flycut --cask`
+
 
 ## Browsers
 1. Chrome
-2. Firefox
+2. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 ## Recommened
 1. [iTerm2](https://iterm2.com/downloads/stable/iTerm2-3_4_16.zip)
