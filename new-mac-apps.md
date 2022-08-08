@@ -35,3 +35,10 @@
 2. [Spark (Mail Client)](https://sparkmailapp.com/)
 
 ## Expensive but good. 
+1. Affinity Photo
+2. Affinity Draw
+3. PDF Expert 
+4. CrossOver
+
+## Parental controls
+1. [Mac Parental Controls](https://support.apple.com/guide/mac-help/set-up-content-and-privacy-restrictions-mchl8490d51e/mac)
