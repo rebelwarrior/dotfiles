@@ -20,7 +20,7 @@
 
 
 ## Browsers
-1. Chrome
+1. [Chrome](https://www.google.com/chrome/downloads/)
 2. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 ## Recommened
