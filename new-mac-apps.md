@@ -4,7 +4,7 @@
 
 
 ## App Store
-1. [Magnet](https://apps.apple.com/us/app/magnet/id441258766?mt=12)
+1. [Magnet](https://apps.apple.com/us/app/magnet/id441258766?mt=12) or [BetterSnapTool](https://apps.apple.com/us/app/bettersnaptool/id417375580?mt=12)
 2. [Prime Video?](https://apps.apple.com/us/app/amazon-prime-video/id545519333)
 3. [Numbers](https://apps.apple.com/us/app/numbers/id409203825?mt=12)
 4. [Pages](https://apps.apple.com/us/app/pages/id409201541?mt=12)
