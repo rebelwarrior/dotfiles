@@ -9,6 +9,7 @@
 3. [Numbers](https://apps.apple.com/us/app/numbers/id409203825?mt=12)
 4. [Pages](https://apps.apple.com/us/app/pages/id409201541?mt=12)
 5. [Keynote](https://apps.apple.com/us/app/keynote/id409183694?mt=12)
+6. [Flycut](https://apps.apple.com/us/app/flycut-clipboard-manager/id442160987?mt=12)
 
 ## App Store iPad/iPhone Apps
 1. [Easy Calendar?](https://apps.apple.com/us/app/easy-calendar/id421724209)
