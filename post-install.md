@@ -15,6 +15,15 @@
  - ssh-copy-id
  - tree
  - bat
+
+### RbEnv & Ruby Build
+
+1. Ruby and RbEnv and [RbEnv Use](https://github.com/rkh/rbenv-use)
+ - ~~`brew install ruby-build --HEAD`~~
+ - ~~`brew install rbenv`~~ 
+ - ~~`brew install rbenv-use`~~
+requires extra steps now
+`git clone https://github.com/rbenv/ruby-build.git`
  
 ## Mac Applications 
 
@@ -57,10 +66,6 @@
 ## Programming Languages Apps
 
 1. Ruby and RbEnv and [RbEnv Use](https://github.com/rkh/rbenv-use)
- - `brew install ruby-build --HEAD`
- - `brew install rbenv` 
- - `brew install rbenv-use`
-    - requires extra steps now
 2. [NodeJs]() (M1 Optimized in latest version)
 3. [Elm Lang](https://elm-lang.org)
 4. Python and Pyenv
@@ -71,7 +76,7 @@
 5. [Julia Lang](https://julialang.org/downloads/) for Data Science
 7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/) or [Plain R](https://cran.microsoft.com) for Data Science
 8. [Docker Desktop App](https://www.docker.com/products/docker-desktop) or [VirtualBox](https://www.virtualbox.org/)
-9. [PlantUML](http://plantuml.com)
+9. ~~[PlantUML](http://plantuml.com)~~
 10. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11) (Download .zip and place `/usr/local/neo4j`)
 11. [JVisualVM](https://visualvm.github.io/download.html)
 12. [Exercism](https://exercism.io/my/settings) `brew install exercism` & `exercism configure`
