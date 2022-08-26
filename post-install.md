@@ -21,11 +21,11 @@
 1. Ruby and RbEnv and [RbEnv Use](https://github.com/rkh/rbenv-use)
  - ~~`brew install ruby-build --HEAD`~~
  - ~~`brew install rbenv`~~ 
- - ~~`brew install rbenv-use`~~
-requires extra steps now
-`git clone https://github.com/rbenv/rbenv.git ~/.rbenv`
-`cd ~/.rbenv && src/configure && make -C src`
-`cd ~/.rbenv/plugins && git clone https://github.com/rbenv/ruby-build.git`
+ - ~~`brew install rbenv-use`~~  
+**requires extra steps now**  
+`git clone https://github.com/rbenv/rbenv.git ~/.rbenv`  
+`cd ~/.rbenv && src/configure && make -C src`  
+`cd ~/.rbenv/plugins && git clone https://github.com/rbenv/ruby-build.git`  
  
 ## Mac Applications 
 
