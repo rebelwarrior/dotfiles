@@ -25,6 +25,7 @@
 **requires extra steps now**  
 `git clone https://github.com/rbenv/rbenv.git ~/.rbenv`  
 `cd ~/.rbenv && src/configure && make -C src`  
+`mkdir -p ~/.rbenv/plugins`
 `cd ~/.rbenv/plugins && git clone https://github.com/rbenv/ruby-build.git`  
  
 ## Mac Applications 
