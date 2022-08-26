@@ -23,7 +23,9 @@
  - ~~`brew install rbenv`~~ 
  - ~~`brew install rbenv-use`~~
 requires extra steps now
-`git clone https://github.com/rbenv/ruby-build.git`
+`git clone https://github.com/rbenv/rbenv.git ~/.rbenv`
+`cd ~/.rbenv && src/configure && make -C src`
+`cd ~/.rbenv/plugins && git clone https://github.com/rbenv/ruby-build.git`
  
 ## Mac Applications 
 
