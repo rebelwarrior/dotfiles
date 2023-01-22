@@ -80,7 +80,7 @@
   - Install Pip packages `pip3 install youtube-dl` 
 5. [Julia Lang](https://julialang.org/downloads/) for Data Science
 7. [Microsoft R Open](https://mran.microsoft.com/open) & [RStudio](https://www.rstudio.com/products/rstudio/download/) or [Plain R](https://cran.microsoft.com) for Data Science
-8. [Docker Desktop App](https://www.docker.com/products/docker-desktop) or [VirtualBox](https://www.virtualbox.org/)
+8. [Podman](https://podman-desktop.io) [~Docker Desktop App~](https://www.docker.com/products/docker-desktop) [~VirtualBox~](https://www.virtualbox.org/)
 9. ~~[PlantUML](http://plantuml.com)~~
 10. [Neo4J](https://neo4j.com/download-center/#community) (Requires OpenJDK@11) (Download .zip and place `/usr/local/neo4j`)
 11. [JVisualVM](https://visualvm.github.io/download.html)
