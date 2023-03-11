@@ -55,6 +55,7 @@ alias rubocop-app='rubocop -Da app/'
 # alias sgp='shotgun -s puma -p 3000 config.ru'
 # For Rails
 alias rspec-init='bin/rails generate rspec:install'
+alias rspec-nice='rspec -fd'
 # For RBENV
 alias rbe='rbenv'
 # For Pry
@@ -72,8 +73,11 @@ alias jekyll-dev='be jekyll serve --config _config.dev.yml'
 # `gem install -v '~> 1.0'`
 
 ## Java Related
-export JRE_HOME="/opt/homebrew/opt/openjdk@11"
-alias java-arch="java -Xinternalversion"
+#export JRE_HOME="/opt/homebrew/opt/openjdk@11"
+#export JRE_HOME="/opt/homebrew/opt/openjdk"
+#export JAVACMD="/opt/homebrew/opt/openjdk@11/bin/java"
+# export JAVACMD="/opt/homebrew/opt/openjdk/bin/java"
+alias java-arch="java -Xinternalversion" # Tells you if it's M1 or x86
 
 ## JavaScript / Node Related
 alias safer-npm='npm config set ignore-scripts true'
@@ -93,7 +97,14 @@ alias elm-repl='elm repl'
 alias elm-pipeline='elm install NoRedInk/elm-json-decode-pipeline'
 
 ## Haskell Related
+alias haskell='ghci'
 alias hask='ghci'
+alias haskui='ghcup tui'
+
+## Podman / Docker Related
+alias docker='podman'
+alias podman-start='podman machine start'
+alias podman-stop='podman machine stop'
 
 ## Elixir & Phoenix Related
 function phoenix() {
@@ -125,17 +136,11 @@ alias hugo-build-minify='hugo --cleanDestinationDir --minify'
 alias hugo-new='hugo new site'
 alias hugo-new-theme='hugo new theme'
 
-## Sublime Text
-alias lime='subl'
-
 ## Deno Related
 alias deno-fileserver='deno run --allow-net --allow-read https://deno.land/std/http/file_server.ts'
 
 ## Tailwind CSS
 alias tailwind-build-css='npx tailwindcss-cli@latest build -o tailwind.css'
-
-## Dart SDK
-alias dart-pub="${HOME}/Developer/dart-sdk/bin/pub"
 
 ## ElasticSearch
 # alias els='elasticsearch'
@@ -155,7 +160,7 @@ alias dart-pub="${HOME}/Developer/dart-sdk/bin/pub"
 
 ## Scala
 # SBT seems to only work with Java 8
-alias sbt8='sbt -java-home /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home'
+# alias sbt8='sbt -java-home /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home'
 
 ## Kubernetes
 alias kubectl='minikube kubectl --'
@@ -165,9 +170,12 @@ alias kubectl='minikube kubectl --'
 ### Paths: ###
 ##############
 
+## Haskel Related 
+
 ## Elixir Related
 # Adds documentation for Erlang methods in Elixir.
-export KERL_BUILD_DOCS="yes" # try with `h :calendar.gregorian_seconds_to_datetime`
+export KERL_BUILD_DOCS="yes"
+# try with `h :calendar.gregorian_seconds_to_datetime`
 
 ## Rust Related
 if [ -e $HOME/.cargo ]; then
@@ -180,8 +188,8 @@ fi
 # if [ -e /usr/local/opt/go ]; then; export PATH=$PATH:/usr/local/opt/go/libexec/bin; fi
 
 ## Sublime Text
-alias lime='subl'
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+# alias lime='subl'
+# export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 
 #####################
@@ -220,11 +228,6 @@ export OPERA_DRIVER_HOME="/usr/local/operadriver_mac64"
 ### Functions: ###
 ##################
 
-## PostgresQL
-function pg(){
-  # export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin;
-  '/Applications/Postgres.app/Contents/Versions/latest/bin'/$*
-}
 
 ## Brew Dependencies script
 function brew-dependencies(){
@@ -239,6 +242,11 @@ function brew-dependencies(){
 #     brew deps --tree $cask;
 #   done
 # }
+
+fuction upall(){
+  brew upgrade --ignore-pinned;rustup update;
+  # update-oh-my-zsh;
+}
 
 ## Dash
 function dashq(){
@@ -262,6 +270,9 @@ function showIcons(){
   defaults write com.apple.finder CreateDesktop -bool true && killall Finder
 }
 
+## Codeweavers' CrossOver
+alias cleanup-crossoover="rm ${HOME}/Library/Application\ Support/CrossOver/installers/*"
+
 ## Nescesary Mac Defaults
 
 ## Reset RVM is not a function
@@ -276,8 +287,7 @@ function showIcons(){
 # jre/lib/security
 # /Library/Java/JavaVirtualMachines
 
-## Codeweavers' CrossOver
-alias cleanup-crossoover="rm ${HOME}/Library/Application\ Support/CrossOver/installers/*"
+
 
 ####################
 ### Experimental ###
@@ -292,7 +302,12 @@ fi
 if (ls /Applications | grep -q 'Firefox'); then
   # For Firefox Development Edition (mac only)
   # alias firefox="/Applications/\"${$(ls /Applications | grep 'Firefox')}\"/Contents/MacOS/firefox";
-  alias firefox="/Applications/\"$(ls /Applications | grep 'Firefox' | head -1)\"/Contents/MacOS/firefox";
+  # alias firefox="/Applications/\"$(ls /Applications | grep 'Firefox' | head -1)\"/Contents/MacOS/firefox";
+  function firefox(){
+    open -a /Applications/Firefox\ Developer\ Edition.app $1 --args $2 --kiosk
+  }
+  alias firefox-cli='/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox';
+  # https://wiki.mozilla.org/Firefox/CommandLineOptions
 fi
 
 # if (command -v pygmentize >/dev/null 2>&1 || exit 1 ); then
@@ -362,7 +377,6 @@ function gemfile() {
 ## Tomcat
 function tomcat() {
   # export CATALINA_OPTS=""
-  export JRE_HOME="/opt/homebrew/opt/openjdk@11"
   echo('catalina run')
 }
 
@@ -390,6 +404,7 @@ function time-machine-exclusions() {
   sudo tmutil addexclusion -p ~/Library/Application\ Support/CrossOver/Bottles/Steam; # CX Steam
   sudo tmutil addexclusion -p ~/Library/Containers/com.docker.docker/Data; # Docker
   sudo tmutil addexclusion -p ~/Library/Application\ Support/Steam/steamapps/common; # Mac Steam
+  sudo tmutil addexclusion -p ~/.ghcup; # Haskell
 }
 
 function install-functions() {
