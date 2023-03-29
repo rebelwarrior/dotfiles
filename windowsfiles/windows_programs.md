@@ -43,3 +43,5 @@ Windows 10:
 
 Windows Command for Checksums:
 `CertUtil -hashfile file_name sha256`
+
+What's a good PDF signing program? 
