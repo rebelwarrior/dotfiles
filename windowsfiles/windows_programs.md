@@ -31,14 +31,15 @@ More from Ninite
 Office:
 - [OnlyOffice](https://www.onlyoffice.com/en/download-desktop.aspx)
 
-Media Related:
+Media Related:  
 [Lightworks](https://www.lwks.com) (video editor)  
+[Blender](https://www.blender.org/) (also video editor)
 [OBS Studio](https://obsproject.com) (video streaming)  
 [AffinityPhoto](https://affinity.serif.com/en-gb/photo/) (image editing)  
-[Audacity](https://www.audacityteam.org/download/windows/)  
-[FireAlpaca](https://firealpaca.com/download/)  
+[Audacity](https://www.audacityteam.org/download/windows/) (audio editing)  
+[FireAlpaca](https://firealpaca.com/download/) (image painting)  
 
-Windows 10:
+Windows 10:  
 [New Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab)
 
 Windows Command for Checksums:
