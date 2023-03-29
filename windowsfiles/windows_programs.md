@@ -33,7 +33,7 @@ Office:
 
 Media Related:  
 [Lightworks](https://www.lwks.com) (video editor)  
-[Blender](https://www.blender.org/) (also video editor)
+[Blender](https://www.blender.org/) (also video editor)  
 [OBS Studio](https://obsproject.com) (video streaming)  
 [AffinityPhoto](https://affinity.serif.com/en-gb/photo/) (image editing)  
 [Audacity](https://www.audacityteam.org/download/windows/) (audio editing)  
