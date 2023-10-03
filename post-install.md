@@ -143,6 +143,11 @@
 Check this [website](https://isapplesiliconready.com/for/m1)
 
 ---
+#### Sonoma Screensaver location
+
+`/Library/Application Support/com.apple.idleassetsd/Customer/4KSDR240FPS`
+
+---
 
 ## Post Install Textmate Script 
 ```bash
