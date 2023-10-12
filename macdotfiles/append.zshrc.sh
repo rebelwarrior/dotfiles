@@ -33,6 +33,7 @@ if test -d "$HOME/.rbenv"; then
   export PATH="$HOME/.rbenv/shims:${PATH}"
   export RBENV_SHELL=zsh
   eval "$(~/.rbenv/bin/rbenv init - zsh)"
+  export BUNDLER_EDITOR='code' #"subl"
 fi
 
 ### PyEnv
