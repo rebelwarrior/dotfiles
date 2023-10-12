@@ -24,9 +24,8 @@
  - ~~`brew install rbenv-use`~~  
 **requires extra steps now**  
 `git clone https://github.com/rbenv/rbenv.git ~/.rbenv`  
-`cd ~/.rbenv && src/configure && make -C src`  
-`mkdir -p ~/.rbenv/plugins`  
-`cd ~/.rbenv/plugins && git clone https://github.com/rbenv/ruby-build.git`  
+`echo 'eval "$(~/.rbenv/bin/rbenv init - zsh)"' >> ~/.zshrc`  (Should already be on zshrc.sh)
+`git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build`  
 `git clone https://github.com/rkh/rbenv-whatis.git`  
 `git clone https://github.com/rkh/rbenv-use.git`  
  
