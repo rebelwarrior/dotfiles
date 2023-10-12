@@ -29,13 +29,10 @@ if [ -e $HOME/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; 
 fi 
 
 ### rbenv (RUBY)
-if (type rbenv >/dev/null 2>&1 || exit 1 ); then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)";
-  if (type brew >/dev/null 2>&1 || exit 1 ); then
-    # This prevents an OpenSSL being downloaded with each ruby version.
-    export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-  fi
+if test -d "$HOME/.rbenv"; then 
+  export PATH="$HOME/.rbenv/shims:${PATH}"
+  export RBENV_SHELL=zsh
+  eval "$(~/.rbenv/bin/rbenv init - zsh)"
 fi
 
 ### PyEnv
