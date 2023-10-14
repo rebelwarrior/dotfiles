@@ -219,9 +219,7 @@ alias cypher-shell="/usr/local/neo4j/bin/cypher-shell"
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias safari='open -a Safari'
 alias opera='/Applications/Opera.app/Contents/MacOS/Opera'
-
-## Opera Driver Location (similar to chrome driver) get from GitHub
-export OPERA_DRIVER_HOME="/usr/local/operadriver_mac64"
+alias inkscape='/Applications/Inkscape.app/Contents/MacOS/inkscape'
 
 
 ##################
