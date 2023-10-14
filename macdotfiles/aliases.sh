@@ -241,7 +241,7 @@ function brew-dependencies(){
 #   done
 # }
 
-fuction upall(){
+function upall(){
   brew upgrade --ignore-pinned;rustup update;
   # update-oh-my-zsh;
 }
