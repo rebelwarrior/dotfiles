@@ -7,7 +7,7 @@ ZSH_THEME=random
 ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "kolo" )
 if [ -e $HOME/.oh-my-zsh ]; then 
   ## Plugin
-  plugins=(git)
+  plugins=(git zsh-syntax-highlighting)
   ## Load "Oh My Zsh"
   source $ZSH/oh-my-zsh.sh
 fi
