@@ -142,6 +142,12 @@
 Check this [website](https://isapplesiliconready.com/for/m1)
 
 ---
+
+# Fonts
+[Google Garamond](https://fonts.google.com/specimen/EB+Garamond)
+
+---
+
 #### Sonoma Screensaver location
 
 `/Library/Application Support/com.apple.idleassetsd/Customer/4KSDR240FPS`
