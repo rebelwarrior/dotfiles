@@ -19,7 +19,7 @@ EOF
 
 ```
 
-#Changing how mailto: links are handled in Chrome to use outlook.com
+# Changing how mailto: links are handled in Chrome to use outlook.com
 
 1. Go to Outlook.com and sign in.
 2. Open the console (Cmd + Opt + J)
