@@ -7,6 +7,7 @@
 3.
 
 ```python
+
 import CoreServices;
 result = CoreServices.LSSetDefaultHandlerForURLScheme(
     "mailto",
@@ -14,6 +15,6 @@ result = CoreServices.LSSetDefaultHandlerForURLScheme(
 print("Result: %d (%s)" % (
     result,
     "Success" if result == 0 else "Error"))
-EOF```
+EOF
 
 ```
