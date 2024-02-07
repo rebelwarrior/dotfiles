@@ -20,6 +20,7 @@ EOF
 ```
 
 # Changing how mailto: links are handled in Chrome to use outlook.com
+[source](https://superuser.com/questions/977736/how-can-i-set-chrome-to-let-mailto-links-be-handled-by-outlook-com)
 
 1. Go to Outlook.com and sign in.
 2. Open the console (Cmd + Opt + J)
