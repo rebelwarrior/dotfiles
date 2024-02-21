@@ -10,6 +10,7 @@
  - add `plugins=(git zsh-syntax-highlighting)` to `~/.zshrc`
 5. Command-line utilities
  - htop
+ - awk
  - nnn
  - ncdu
  - ssh-copy-id
