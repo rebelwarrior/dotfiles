@@ -63,6 +63,7 @@ alias spry='pry --simple-prompt'
 # For JRuby migration install jruby-lint
 alias jruby-lint='jrlint'
 ## JRuby Opts
+# export JRUBY_OPTS=-Xparser.prism ## adds Prism JRuby < 9.5 < 9.4.6.0
 # export JRUBY_OPTS="-J-XX:+UseParallelGC" # Using different Garbage Collector
 alias rake-tasks='rake -T'
 # For Rails
