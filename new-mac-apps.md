@@ -9,14 +9,14 @@
 3. [Numbers](https://apps.apple.com/us/app/numbers/id409203825?mt=12)
 4. [Pages](https://apps.apple.com/us/app/pages/id409201541?mt=12)
 5. [Keynote](https://apps.apple.com/us/app/keynote/id409183694?mt=12)
-6. [Flycut](https://apps.apple.com/us/app/flycut-clipboard-manager/id442160987?mt=12)
-7. [Bitwarden?](https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12)
+
+
 
 ## App Store iPad/iPhone Apps
-1. [Easy Calendar?](https://apps.apple.com/us/app/easy-calendar/id421724209)
+1. [Easy Calendar](https://apps.apple.com/us/app/easy-calendar/id421724209)
 
 ## Command Line
-1. [homebrew?](https://brew.sh/)
+1. [homebrew](https://brew.sh/)
 
 
 ## Browsers
@@ -24,23 +24,28 @@
 2. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 ## Recommened
-1. [iTerm2?](https://iterm2.com/downloads/stable/iTerm2-3_4_16.zip)
-2. [VLC Media Player](https://get.videolan.org/vlc/3.0.17.3/macosx/vlc-3.0.17.3-arm64.dmg)
+1. [iTerm2](https://iterm2.com/downloads/)
+2. [VLC Media Player](https://get.videolan.org/)
 3. [App Cleaner](https://freemacsoft.net/appcleaner/) 
 4. [OnlyOffice](https://www.onlyoffice.com/desktop.aspx)
-5. [Zoom](https://zoom.us/download#client_4meeting)
+5. [MarkEdit](https://github.com/MarkEdit-app/MarkEdit/releases)
 
 
 ## Other
-1. Discord Canary 
-2. [Spark (Mail Client)?](https://sparkmailapp.com/)
+1. Discord Canary
+2. Affinity?
+
 
 ## Expensive but good. 
-1. Affinity Photo
-2. Affinity Draw
-3. PDF Expert 
-4. CrossOver
+1. PDF Expert 
+2. CrossOver
 
 ## Parental controls
 1. [Mac Parental Controls](https://support.apple.com/guide/mac-help/set-up-content-and-privacy-restrictions-mchl8490d51e/mac)
 2. [Family Sharing](https://support.apple.com/en-us/HT201088)
+
+## Others
+1. [Zoom]()
+2. [Bitwarden?](https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12)
+3. 6. [Flycut](https://apps.apple.com/us/app/flycut-clipboard-manager/id442160987?mt=12)
+   7. 2. [Spark (Mail Client)?](https://sparkmailapp.com/)
