@@ -22,6 +22,7 @@
 ## Browsers
 1. [Chrome](https://www.google.com/chrome/downloads/)
 2. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+3. [Vivaldi]()
 
 ## Recommened
 1. [iTerm2](https://iterm2.com/downloads/)
