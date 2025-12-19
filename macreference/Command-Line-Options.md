@@ -8,6 +8,16 @@
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 ```
 kill WindowManger to get the effect to take effect right away
-```
+```bash
 killall WindowManager
+```
+
+
+To view IP address
+
+```bash
+# IP address assigned by ISP
+curl ifconfig.me
+# IP address assigned internally by router
+ifconfig -a | grep broadcast
 ```
