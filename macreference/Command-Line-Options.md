@@ -1,0 +1,13 @@
+# Command Line options
+
+
+### How can I use Terminal/defaults to set "Click wallpaper to reveal desktop" to "Only in Stage Manager"
+[source](https://apple.stackexchange.com/questions/468633/how-can-i-use-terminal-defaults-to-set-click-wallpaper-to-reveal-desktop-to-o)
+
+```bash
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+```
+kill WindowManger to get the effect to take effect right away
+```
+killall WindowManager
+```
