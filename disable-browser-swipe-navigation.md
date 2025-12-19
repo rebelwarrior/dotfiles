@@ -12,6 +12,4 @@ defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool 
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 ```
 
-## Opera
-
 ## Safari
