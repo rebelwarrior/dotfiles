@@ -21,3 +21,8 @@ curl ifconfig.me
 # IP address assigned internally by router
 ifconfig -a | grep broadcast
 ```
+
+Command to set up Natural scrolling from command line. 
+```bash
+defaults write -g com.apple.swipescrolldirection -bool false
+```
