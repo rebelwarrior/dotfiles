@@ -26,3 +26,6 @@ Command to set up Natural scrolling from command line.
 ```bash
 defaults write -g com.apple.swipescrolldirection -bool false
 ```
+
+Useful Commands: 
+[source](https://www.igeeksblog.com/macos-terminal-commands/)
