@@ -107,7 +107,9 @@ brew install scrivener
 ## Postico 2
 brew install postico
 
-
+### Optional 
+## Balena Etcher
+brew install balenaetcher
 
 ```
 

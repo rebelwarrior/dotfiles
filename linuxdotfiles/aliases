@@ -16,6 +16,7 @@ alias ufw-logs="grep UFW /var/log/syslog"
 alias ip-address="hostname --all-ip-addresses"
 alias ip-address-full="ip addr show"
 alias list-ports="sudo netstat -lptu"
+# nvidia-driver="nvidia-smi"
 
 #alias for list of users
 
