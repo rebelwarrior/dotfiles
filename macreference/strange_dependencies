@@ -1,9 +1,0 @@
-Ruby (RVM)
-  pkg-config
-  libyaml
-  readline
-  libksba
-    - makedepend
-    - libgpg-error
-  openssl
-
