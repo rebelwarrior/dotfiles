@@ -29,3 +29,9 @@ defaults write -g com.apple.swipescrolldirection -bool false
 
 Useful Commands: 
 [source](https://www.igeeksblog.com/macos-terminal-commands/)
+
+
+Loop up a word in the dictionary
+```bash
+open dict://my_word
+```
