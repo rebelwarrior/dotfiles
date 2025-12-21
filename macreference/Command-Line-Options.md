@@ -31,7 +31,7 @@ Useful Commands:
 [source](https://www.igeeksblog.com/macos-terminal-commands/)
 
 
-Loop up a word in the dictionary
+Look up a word in the dictionary
 ```bash
 open dict://my_word
 ```
